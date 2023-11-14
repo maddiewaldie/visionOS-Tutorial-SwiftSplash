@@ -15,7 +15,7 @@ let maximumConnectionDistance = Float(0.01)
 
 /// Indicate how close two compatible connection points have to be
 /// in order to snap.
-let maximumSnapDistance = Float(0.1)
+let maximumSnapDistance = Float(0.14)
 
 /// The app doesn't continue snapping pieces forever. Constantly snapping pieces could
 /// result in weird interactions when connection points are close.

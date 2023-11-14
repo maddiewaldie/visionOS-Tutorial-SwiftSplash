@@ -39,6 +39,8 @@ public let sortOrderFishGlassSuffix = "noGlass_ride_animation"
 public let sortOrderFishSuffix = "glass_ride_animation"
 public let sortOrderWaterSuffix = "_water"
 public let sortOrderTrackTopsuffix = "_top"
+public let sortOrderTrackBottomSuffix = "_bottom"
+public let sortOrderTrackBottomGlowSuffix = "_bottom_glow"
 public let sortOrderTrackGlowSuffix = "_top_glow"
 public let sortOrderEndWaterName = "end_water"
 public let sortOrderEndSlideName = "slide_end_water"
@@ -47,6 +49,7 @@ public let waterLevelParameterName = "water_level"
 public let endParticlesName = "EndParticles"
 public let waterFallParticlesName = "waterFallSplash"
 public let fireworksParticlesName = "fireWorks"
+public let fishSplashParticleName = "fishSplash"
 
 public enum MaterialType: Int {
     case metal = 0

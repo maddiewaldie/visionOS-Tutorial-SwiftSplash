@@ -71,5 +71,8 @@ extension AppState {
             nextPiece = nextPiece?.connectableStateComponent?.nextPiece
         }
         
+        startPiece.setRideLights(to: false)
+        goalPiece?.setRideLights(to: false)
+        
     }
 }

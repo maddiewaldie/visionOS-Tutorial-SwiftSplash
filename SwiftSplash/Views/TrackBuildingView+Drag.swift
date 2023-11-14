@@ -15,21 +15,25 @@ extension TrackBuildingView {
     /// The logic to handle the `.onChanged` event from a rotation gesture.
     @MainActor
     func handleDrag(_ value: EntityTargetValue<DragGesture.Value>, ended: Bool = false) {
-        // On a rotate gesture, the drag gesture can also be called. Only one of the two
-        // gestures will work at a time, so if there's a rotation in progress, return without
+        // On a rotate gesture, the drag gesture can sometimes also be called. Only one of the two
+        // gestures should work at a time, so if there's a rotation in progress, return without
         // handling the drag.
         guard !isRotating else { return }
         
         defer {
             if ended {
                 handleDragEnd(value)
-                showEditUI()
+                Task { @MainActor in
+                    // Wait for snapping to finish.
+                    try await Task.sleep(for: .seconds(0.25))
+                    appState.showEditAttachment()
+                }
                 isDragging = false
             }
         }
 
-        appState.editAttachment?.removeFromParent()
-        
+        appState.hideEditAttachment()
+    
         lastTouchDownTime = Date.timeIntervalSinceReferenceDate
         // Gestures might hit a child entity. This traverses up to the connectable ancestor, if needed.
         let tappedEntity = value.entity
@@ -39,9 +43,7 @@ extension TrackBuildingView {
             }
             
             // Disallow dragging the end-of-track marker.
-            if entity.name == SwiftSplashTrackPieces.placePieceMarkerName {
-                return
-            }
+            if entity.name == SwiftSplashTrackPieces.placePieceMarkerName { return }
             draggedEntity = entity
             isDragging = true
             
@@ -68,8 +70,7 @@ extension TrackBuildingView {
             
             // Handle snapping.
             if ended {
-                let snapInfo = DragSnapInfo(entity: entity,
-                                        otherSelectedEntities: Array(allDragged))
+                let snapInfo = DragSnapInfo(entity: entity, otherSelectedEntities: Array(allDragged))
                 guard let others = entity.scene?.performQuery(Self.connectableQuery) else {
                     logger.info("No entities to snap to, returning.")
                     isDragging = false
@@ -112,10 +113,7 @@ extension TrackBuildingView {
                 appState.findClosestPieces(for: entity)
                 SoundEffect.placePiece.play(on: entity)
                 if entity == appState.trackPieceBeingEdited {
-                    if let attachmentPoint = appState.trackPieceBeingEdited?.uiAnchor,
-                       let editAttachment = appState.editAttachment {
-                        attachmentPoint.addChild(editAttachment)
-                    }
+                    appState.showEditAttachment()
                 }
             }
         }
@@ -126,20 +124,8 @@ extension TrackBuildingView {
             resetPiece(dragged)
         }
         
-        if let attachmentPoint = appState.trackPieceBeingEdited?.uiAnchor,
-           let editAttachment = appState.editAttachment {
-            attachmentPoint.addChild(editAttachment)
-        }
+        appState.showEditAttachment()
 
-    }
-    
-    /// The selected piece has an attachment used to edit it. This shows it after the drag is finished.
-    @MainActor
-    private func showEditUI() {
-        if let attachmentPoint = appState.trackPieceBeingEdited?.uiAnchor,
-           let editAttachment = appState.editAttachment {
-            attachmentPoint.addChild(editAttachment)
-        }
     }
     
     /// Updates a dragged entity's state component based on the results of the drag.

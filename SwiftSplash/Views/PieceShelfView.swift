@@ -35,6 +35,15 @@ struct PieceShelfView: View {
             .pickerStyle(.segmented)
             .padding(.horizontal, 25)
             .padding(.bottom)
+            .accessibilityAction(named: Text("Select metallic material for next piece added.")) {
+                appState.selectedMaterialType = .metal
+            }
+            .accessibilityAction(named: Text("Select wooden material for next piece added.")) {
+                appState.selectedMaterialType = .wood
+            }
+            .accessibilityAction(named: Text("Select plastic material for next piece added.")) {
+                appState.selectedMaterialType = .plastic
+            }
             
             PieceShelfTrackButtonsView()
             
@@ -52,6 +61,7 @@ struct PieceShelfView: View {
                     dismiss()
                 }
             }
+            .accessibilityElement()
         }
         .opacity(animateIn ? 0 : 1.0)
         .frame(width: 460, height: 420, alignment: .center)

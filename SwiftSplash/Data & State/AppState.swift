@@ -101,15 +101,6 @@ public class AppState {
                 [buildMusic, menuMusic, rideMusic].filter { $0.isPlaying }.forEach {
                     $0.volume = 1.0
                 }
-                
-                switch phase {
-                case .buildingTrack:
-                    ()
-                case .rideRunning:
-                    ()
-                default:
-                    ()
-                }
             }
         }
     }
@@ -271,6 +262,9 @@ public class AppState {
             selectedMaterialIndex = newValue.rawValue
         }
     }
+    
+    /// A sort order group used for all of the track pieces other than start and end.
+    let trackPieceSortOrderGroup = ModelSortGroup()
 }
 
 @MainActor

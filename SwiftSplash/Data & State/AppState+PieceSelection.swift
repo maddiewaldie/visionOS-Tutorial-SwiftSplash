@@ -42,6 +42,7 @@ extension AppState {
             try? await Task.sleep(for: .seconds(0.1))
             trackPieceBeingEdited = nil
             startPiece?.connectableStateComponent?.isSelected = false
+            hideEditAttachment()
             updateConnections()
             updatePower()
             updateMarkerPosition()
@@ -56,9 +57,11 @@ extension AppState {
             if let index = additionalSelectedTrackPieces.firstIndex(of: entity) {
                 additionalSelectedTrackPieces.remove(at: index)
             }
+            showEditAttachment()
         } else {
             additionalSelectedTrackPieces.append(entity)
             entity.connectableStateComponent?.isSelected = true
+            showEditAttachment()
         }
     }
     
@@ -175,6 +178,29 @@ extension AppState {
                 additionalPiece.connectableStateComponent?.material = material
                 additionalPiece.updateTrackPieceAppearance()
             }
+        }
+    }
+    
+    /// Shows the edit attachment over the selected piece.
+    public func showEditAttachment() {
+        if let editMenu = editAttachment {
+            if editMenu.parent != nil {
+                editMenu.removeFromParent()
+            }
+            // Parent to root so it doesn't highlight from the entity's HoverEffectComponent.
+            root.addChild(editMenu)
+
+            // Set its position based on the selected piece.
+            if let position = trackPieceBeingEdited?.uiAnchor?.scenePosition {
+                editMenu.scenePosition = position
+            }
+        }
+    }
+    
+    /// Hides the edit attachment.
+    public func hideEditAttachment() {
+        if let editMenu = editAttachment {
+            editMenu.removeFromParent()
         }
     }
 }

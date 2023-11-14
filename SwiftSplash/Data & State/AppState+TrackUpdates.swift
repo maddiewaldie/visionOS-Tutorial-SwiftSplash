@@ -190,38 +190,41 @@ extension AppState {
                 }
                 
                 let adjustedPieceStartTime = (shouldPauseRide) ? pieceStartTime + Date.timeIntervalSinceReferenceDate - pauseStartTime
-                    : pieceStartTime
+                : pieceStartTime
                 let fillLevel = Float(Date.timeIntervalSinceReferenceDate - adjustedPieceStartTime) * duration
                 
                 currentPiece?.setWaterLevel(level: fillLevel)
                 if fillLevel >= maxFillLevel {
                     pieceStartTime = Date.timeIntervalSinceReferenceDate
-                 
+                    
                     currentPiece = currentPiece?.connectableStateComponent?.nextPiece
                 }
-                
             }
             if shouldCancelRide { return }
-            goalPiece?.setAllParticleEmittersTo(to: true, except: [fireworksParticlesName])
+            goalPiece?.setAllParticleEmittersTo(to: true, except: [fireworksParticlesName, fishSplashParticleName])
         }
     }
 }
 
 extension Entity {
-    /// Turns ride lights on or off by setting promoted property values on Shader Graph materials.
-    func setRideLights(to isOn: Bool) {
+    /// Turns ride lights on or off or change the speed of the color changes by setting promoted property values on Shader Graph materials.
+    func setRideLights(to isOn: Bool, speed: Float = 1.0) {
         forEachDescendant(withComponent: ModelComponent.self) { modelEntity, component in
             var modelComponent = component
             modelComponent.materials = modelComponent.materials.map {
                 guard var material = $0 as? ShaderGraphMaterial else { return $0 }
-                if material.parameterNames.contains(rideRunningParameterName) {
-                    do {
-                        let lightsOn = Bool(isOn)
+                do {
+                    if material.parameterNames.contains(rideRunningParameterName) {
+                        
                         try material.setParameter(name: rideRunningParameterName,
-                                                  value: MaterialParameters.Value.bool(lightsOn))
-                    } catch {
-                        logger.error("Error setting ride_running material parameter: \(error.localizedDescription)")
+                                                  value: MaterialParameters.Value.bool(isOn))
                     }
+                    if material.parameterNames.contains(speedMultiplierParameterName) {
+                        try material.setParameter(name: speedMultiplierParameterName,
+                                                  value: MaterialParameters.Value.float(speed))
+                    }
+                } catch {
+                    logger.error("Error setting ride_running material parameter: \(error.localizedDescription)")
                 }
                 return material
             }

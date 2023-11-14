@@ -126,15 +126,15 @@ public enum SoundEffect: String, CaseIterable {
     
     var gain: Double {
         switch self {
-        case .placePiece: 400
-        case .deletePiece: 220
-        case .selectPiece: 400
+        case .placePiece: 0
+        case .deletePiece: 0
+        case .selectPiece: 0
         case .water: -10
-        case .trapDoor: 200
-        case .fishDrop: 40
-        case .fishSlide: 40
-        case .fishGasp: 40
-        case .fishSucceed: 200
+        case .trapDoor: 0
+        case .fishDrop: 0
+        case .fishSlide: 0
+        case .fishGasp: 0
+        case .fishSucceed: 0
         }
     }
     

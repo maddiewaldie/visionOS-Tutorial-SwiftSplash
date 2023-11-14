@@ -36,6 +36,7 @@ public struct ImageButton: View {
         }
         .buttonStyle(.borderless)
         .buttonBorderShape(.roundedRectangle)
+        .accessibilityElement()
     }
 }
 #Preview {

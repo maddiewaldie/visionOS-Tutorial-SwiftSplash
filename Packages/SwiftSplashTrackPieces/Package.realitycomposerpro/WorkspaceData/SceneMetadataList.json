@@ -1,6 +1,35 @@
 {
   "0B15908E-A4D9-4B0F-B604-C2D8D7AA3C7E" : {
+    "cameraTransform" : [
+      0.99864715,
+      2.7423444e-09,
+      -0.051997893,
+      0,
+      -0.0286853,
+      0.8340673,
+      -0.5509165,
+      0,
+      0.043369785,
+      0.5516629,
+      0.8329388,
+      0,
+      0.27462077,
+      0.304706,
+      0.40839344,
+      1
+    ],
     "objectMetadataList" : [
+      [
+        "0B15908E-A4D9-4B0F-B604-C2D8D7AA3C7E",
+        "Root",
+        "StartPiece",
+        "start",
+        "start_glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
       [
         "0B15908E-A4D9-4B0F-B604-C2D8D7AA3C7E",
         "Root"
@@ -25,10 +54,7 @@
       },
       [
         "0DB33E42-BC9D-452C-B0DA-AD29D423C859",
-        "Root",
-        "adventureFish_slide_01_anim_001",
-        "Root_M",
-        "adventureFish_geo_geometry"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -36,7 +62,10 @@
       },
       [
         "0DB33E42-BC9D-452C-B0DA-AD29D423C859",
-        "Root"
+        "Root",
+        "adventureFish_slide_01_anim_001",
+        "Root_M",
+        "adventureFish_geo_geometry"
       ],
       {
         "isExpanded" : true,
@@ -48,8 +77,7 @@
     "objectMetadataList" : [
       [
         "0E1E7C87-7292-4712-AEF2-D4F0A4D414AC",
-        "Root",
-        "M_ModHeight"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -57,7 +85,8 @@
       },
       [
         "0E1E7C87-7292-4712-AEF2-D4F0A4D414AC",
-        "Root"
+        "Root",
+        "M_ModHeight"
       ],
       {
         "isExpanded" : true,
@@ -70,15 +99,6 @@
       [
         "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
         "Root",
-        "Material"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
-        "Root",
         "slide02_modHeight_grass"
       ],
       {
@@ -88,8 +108,16 @@
       [
         "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
         "Root",
-        "slide01_bottom",
         "slide01_bottom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
+        "Root",
+        "Material"
       ],
       {
         "isExpanded" : true,
@@ -107,8 +135,8 @@
       [
         "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
         "Root",
-        "solidSpheres",
-        "Looks"
+        "slide01_bottom",
+        "slide01_bottom"
       ],
       {
         "isExpanded" : true,
@@ -117,9 +145,8 @@
       [
         "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
         "Root",
-        "slide01_bottom",
-        "slide01_bottom",
-        "slide01_bottom_lights"
+        "solidSpheres",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -136,12 +163,37 @@
       [
         "1D3DE33B-343B-4484-9C4D-EDA898EFEFFA",
         "Root",
-        "slide01_bottom"
+        "slide01_bottom",
+        "slide01_bottom",
+        "slide01_bottom_lights"
       ],
       {
         "isExpanded" : true,
         "isLocked" : false
       }
+    ]
+  },
+  "1D5AC723-2609-4FB8-BFDF-5E89366A380E" : {
+    "cameraTransform" : [
+      0.99999994,
+      0,
+      -0,
+      0,
+      -0,
+      0.8660255,
+      -0.49999988,
+      0,
+      0,
+      0.49999988,
+      0.8660255,
+      0,
+      0,
+      0.27093473,
+      0.46927276,
+      1
+    ],
+    "objectMetadataList" : [
+
     ]
   },
   "1F9BE38D-6EF2-4923-96A9-D343D8AE981A" : {
@@ -177,12 +229,111 @@
       }
     ]
   },
+  "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D" : {
+    "cameraTransform" : [
+      0.96342397,
+      -3.3384768e-07,
+      -0.2679821,
+      0,
+      -0.24610673,
+      0.39572448,
+      -0.884779,
+      0,
+      0.10604759,
+      0.91836923,
+      0.38125035,
+      0,
+      0.0018015924,
+      0.051554967,
+      0.020647855,
+      1
+    ],
+    "objectMetadataList" : [
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "M_waterFallSplash"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "waterFallSplash",
+        "Materials",
+        "M_waterFallSplash"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "M_endWater",
+        "NormalFlow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "M_endWater"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "M_endWater",
+        "Flow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "M_endWater",
+        "NormalFlow",
+        "normalStrength"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3CFB10DC-BD11-4E37-91B0-BC5BAF6F913D",
+        "Root",
+        "circle",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
   "4AD49CF9-D2DB-4C70-B48F-BF027E377BD8" : {
     "objectMetadataList" : [
       [
         "4AD49CF9-D2DB-4C70-B48F-BF027E377BD8",
-        "Root",
-        "Materials"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -190,7 +341,8 @@
       },
       [
         "4AD49CF9-D2DB-4C70-B48F-BF027E377BD8",
-        "Root"
+        "Root",
+        "Materials"
       ],
       {
         "isExpanded" : true,
@@ -215,48 +367,6 @@
       [
         "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
         "Root",
-        "adventureFish_slide_02_anim_001",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
-        "Root",
-        "slide_02_ride_anim",
-        "Root_M",
-        "adventureFish_geo_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
-        "Root",
-        "slide_02_ride_anim",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
-        "Root",
-        "adventureFish_slide_02_anim_001",
-        "Root_M",
-        "adventureFish_geo_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
-        "Root",
         "slide_02_ride_anim"
       ],
       {
@@ -270,6 +380,48 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
+        "Root",
+        "adventureFish_slide_02_anim_001",
+        "Root_M",
+        "adventureFish_geo_geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
+        "Root",
+        "slide_02_ride_anim",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
+        "Root",
+        "adventureFish_slide_02_anim_001",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "5CD5E5E2-513E-4885-A1C2-0A9AF4F77005",
+        "Root",
+        "slide_02_ride_anim",
+        "Root_M",
+        "adventureFish_geo_geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
@@ -278,7 +430,7 @@
       [
         "6C7D3C26-7B75-4DB5-AE22-3B923E7027A9",
         "Materials",
-        "MetalRims"
+        "SelectionMarker"
       ],
       {
         "isExpanded" : true,
@@ -287,7 +439,7 @@
       [
         "6C7D3C26-7B75-4DB5-AE22-3B923E7027A9",
         "Materials",
-        "RainbowLights"
+        "MetalRims"
       ],
       {
         "isExpanded" : true,
@@ -304,7 +456,7 @@
       [
         "6C7D3C26-7B75-4DB5-AE22-3B923E7027A9",
         "Materials",
-        "SelectionMarker"
+        "RainbowLights"
       ],
       {
         "isExpanded" : true,
@@ -347,17 +499,6 @@
       [
         "7B6ACDD8-F99E-4D6C-AFB7-1960F07FC567",
         "Root",
-        "slide_03",
-        "Looks",
-        "mat_slides01SG"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "7B6ACDD8-F99E-4D6C-AFB7-1960F07FC567",
-        "Root",
         "slide_03"
       ],
       {
@@ -367,6 +508,17 @@
       [
         "7B6ACDD8-F99E-4D6C-AFB7-1960F07FC567",
         "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "7B6ACDD8-F99E-4D6C-AFB7-1960F07FC567",
+        "Root",
+        "slide_03",
+        "Looks",
+        "mat_slides01SG"
       ],
       {
         "isExpanded" : true,
@@ -408,7 +560,7 @@
       [
         "7ED359C5-C91A-47D9-A9BE-E1C9EB4BA4DC",
         "Root",
-        "SlideBottom_2"
+        "slide_04"
       ],
       {
         "isExpanded" : true,
@@ -426,7 +578,7 @@
       [
         "7ED359C5-C91A-47D9-A9BE-E1C9EB4BA4DC",
         "Root",
-        "slide_04"
+        "SlideBottom_2"
       ],
       {
         "isExpanded" : true,
@@ -468,6 +620,15 @@
       [
         "8EB85C4B-7E07-469E-9D95-C8193FC4E17B",
         "Root",
+        "M_SlideLights"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8EB85C4B-7E07-469E-9D95-C8193FC4E17B",
+        "Root",
         "slide_02"
       ],
       {
@@ -478,15 +639,6 @@
         "8EB85C4B-7E07-469E-9D95-C8193FC4E17B",
         "Root",
         "SlideTopRef"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "8EB85C4B-7E07-469E-9D95-C8193FC4E17B",
-        "Root",
-        "M_SlideLights"
       ],
       {
         "isExpanded" : true,
@@ -584,8 +736,7 @@
     "objectMetadataList" : [
       [
         "57D8E640-DCFA-4FD6-8C0F-996FE8569BE7",
-        "Root",
-        "M_Glow"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -593,7 +744,8 @@
       },
       [
         "57D8E640-DCFA-4FD6-8C0F-996FE8569BE7",
-        "Root"
+        "Root",
+        "M_Glow"
       ],
       {
         "isExpanded" : true,
@@ -602,11 +754,28 @@
     ]
   },
   "65C0A537-3A5F-4EAA-BB83-D52501B4F0E0" : {
+    "cameraTransform" : [
+      -0.0005458551,
+      1.8364917e-08,
+      -0.9999998,
+      0,
+      -0.104161724,
+      0.9945604,
+      5.6910263e-05,
+      0,
+      0.99456024,
+      0.104162,
+      -0.00054303487,
+      0,
+      0.39150184,
+      0.041002497,
+      -0.00021367367,
+      1
+    ],
     "objectMetadataList" : [
       [
         "65C0A537-3A5F-4EAA-BB83-D52501B4F0E0",
-        "Root",
-        "M_StagnantWater"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -614,7 +783,8 @@
       },
       [
         "65C0A537-3A5F-4EAA-BB83-D52501B4F0E0",
-        "Root"
+        "Root",
+        "M_StagnantWater"
       ],
       {
         "isExpanded" : true,
@@ -656,6 +826,24 @@
     ]
   },
   "89EC827F-BA1B-4D7C-AA0F-9369610BC75C" : {
+    "cameraTransform" : [
+      0.9329231,
+      3.0107805e-11,
+      -0.3600756,
+      0,
+      -0.17861639,
+      0.86829257,
+      -0.46277884,
+      0,
+      0.31265098,
+      0.49605244,
+      0.81005025,
+      0,
+      0.056008197,
+      0.15247402,
+      0.1337285,
+      1
+    ],
     "objectMetadataList" : [
       [
         "89EC827F-BA1B-4D7C-AA0F-9369610BC75C",
@@ -680,8 +868,7 @@
     "objectMetadataList" : [
       [
         "341AD791-C088-4D12-A5FD-195ACF26ACBD",
-        "Root",
-        "M_Grass"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -689,7 +876,8 @@
       },
       [
         "341AD791-C088-4D12-A5FD-195ACF26ACBD",
-        "Root"
+        "Root",
+        "M_Grass"
       ],
       {
         "isExpanded" : true,
@@ -714,24 +902,6 @@
       [
         "481E12C0-FE41-4836-A77D-8386B5F1454F",
         "Root",
-        "adventureFish_slide_04_anim_001",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "481E12C0-FE41-4836-A77D-8386B5F1454F",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "481E12C0-FE41-4836-A77D-8386B5F1454F",
-        "Root",
         "slide_04_ride_anim"
       ],
       {
@@ -748,32 +918,47 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "481E12C0-FE41-4836-A77D-8386B5F1454F",
+        "Root",
+        "adventureFish_slide_04_anim_001",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "481E12C0-FE41-4836-A77D-8386B5F1454F",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
   "659C068A-64E9-4097-9D52-55B9BF614D29" : {
+    "cameraTransform" : [
+      0.9652495,
+      7.5100395e-08,
+      -0.2613304,
+      0,
+      -0.16487405,
+      0.77586186,
+      -0.60897875,
+      0,
+      0.20275599,
+      0.630903,
+      0.7489001,
+      0,
+      0.050636187,
+      0.1778809,
+      0.12225773,
+      1
+    ],
     "objectMetadataList" : [
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "selection_triangle",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "slide_end_water"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
       [
         "659C068A-64E9-4097-9D52-55B9BF614D29",
         "Root",
@@ -790,49 +975,8 @@
         "659C068A-64E9-4097-9D52-55B9BF614D29",
         "Root",
         "end",
-        "flag_idle_animation",
-        "root_jnt"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "M_StagnantWater"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "EndParticles"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "flag_idle_animation",
-        "root_jnt",
-        "Skeleton"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "flag_idle_animation"
+        "end_water",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -843,8 +987,17 @@
         "Root",
         "end",
         "selection_marker",
-        "selection_triangle",
-        "Geom"
+        "Geom",
+        "Plane_001"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "659C068A-64E9-4097-9D52-55B9BF614D29",
+        "Root",
+        "M_SlideLights"
       ],
       {
         "isExpanded" : true,
@@ -854,8 +1007,8 @@
         "659C068A-64E9-4097-9D52-55B9BF614D29",
         "Root",
         "end",
-        "flag_idle_animation",
-        "Materials"
+        "selection_marker",
+        "Geom"
       ],
       {
         "isExpanded" : true,
@@ -886,8 +1039,57 @@
       [
         "659C068A-64E9-4097-9D52-55B9BF614D29",
         "Root",
+        "Material"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "659C068A-64E9-4097-9D52-55B9BF614D29",
+        "Root",
+        "end",
+        "EndParticles"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "659C068A-64E9-4097-9D52-55B9BF614D29",
+        "Root",
         "end",
         "selection_marker",
+        "selection_triangle",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "659C068A-64E9-4097-9D52-55B9BF614D29",
+        "Root",
+        "end",
+        "end_water"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "659C068A-64E9-4097-9D52-55B9BF614D29",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "659C068A-64E9-4097-9D52-55B9BF614D29",
+        "Root",
+        "end",
+        "selection_triangle",
         "Geom"
       ],
       {
@@ -902,46 +1104,6 @@
       {
         "isExpanded" : true,
         "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "EndParticles",
-        "endParticles"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "end",
-        "selection_marker",
-        "Geom",
-        "Plane_001"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "659C068A-64E9-4097-9D52-55B9BF614D29",
-        "Root",
-        "M_SlideLights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
       }
     ]
   },
@@ -949,7 +1111,8 @@
     "objectMetadataList" : [
       [
         "669F663A-BA13-43BF-8F2B-64505CCFFF70",
-        "Root"
+        "Root",
+        "M_Grass"
       ],
       {
         "isExpanded" : true,
@@ -957,8 +1120,7 @@
       },
       [
         "669F663A-BA13-43BF-8F2B-64505CCFFF70",
-        "Root",
-        "M_Grass"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -970,7 +1132,8 @@
     "objectMetadataList" : [
       [
         "910FAA1B-8C5F-4A62-B097-64B4051876FB",
-        "Root"
+        "Root",
+        "adventureFish_slide_01_anim_001"
       ],
       {
         "isExpanded" : true,
@@ -978,8 +1141,7 @@
       },
       [
         "910FAA1B-8C5F-4A62-B097-64B4051876FB",
-        "Root",
-        "adventureFish_slide_01_anim_001"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -991,7 +1153,8 @@
     "objectMetadataList" : [
       [
         "943F5562-7502-4157-B62F-69A905311B96",
-        "Root"
+        "Root",
+        "Materials"
       ],
       {
         "isExpanded" : true,
@@ -999,8 +1162,7 @@
       },
       [
         "943F5562-7502-4157-B62F-69A905311B96",
-        "Root",
-        "Materials"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -1014,7 +1176,8 @@
         "2384D283-93D5-4FC6-9557-DD67A4E4EBDE",
         "Root",
         "start_piece_ride_anim",
-        "Root_M"
+        "Root_M",
+        "adventureFish_geo_geometry"
       ],
       {
         "isExpanded" : true,
@@ -1022,7 +1185,9 @@
       },
       [
         "2384D283-93D5-4FC6-9557-DD67A4E4EBDE",
-        "Root"
+        "Root",
+        "start_piece_ride_anim",
+        "Root_M"
       ],
       {
         "isExpanded" : true,
@@ -1039,10 +1204,56 @@
       },
       [
         "2384D283-93D5-4FC6-9557-DD67A4E4EBDE",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "3876DBB0-4287-4363-8306-D912303161E3" : {
+    "cameraTransform" : [
+      -0.84817564,
+      1.0724626e-06,
+      0.52971494,
+      0,
+      0.097467005,
+      0.9829267,
+      0.1560614,
+      0,
+      -0.52067095,
+      0.18399723,
+      -0.83369476,
+      0,
+      -0.42903334,
+      0.30558482,
+      -0.34899926,
+      1
+    ],
+    "objectMetadataList" : [
+      [
+        "3876DBB0-4287-4363-8306-D912303161E3",
         "Root",
-        "start_piece_ride_anim",
-        "Root_M",
-        "adventureFish_geo_geometry"
+        "M_endWater"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3876DBB0-4287-4363-8306-D912303161E3",
+        "Root",
+        "M_endWater",
+        "FlowMap"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "3876DBB0-4287-4363-8306-D912303161E3",
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -1079,6 +1290,30 @@
         "start",
         "startPiece_geo_grp",
         "startPiece",
+        "r_door_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "75024A48-0680-446E-B786-B04F386BD9DC",
+        "Root",
+        "start",
+        "startPiece_geo_grp",
+        "startPiece",
+        "aquarium_lights_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "75024A48-0680-446E-B786-B04F386BD9DC",
+        "Root",
+        "start",
+        "startPiece_geo_grp",
+        "startPiece",
         "starSlide_geo_grp"
       ],
       {
@@ -1088,7 +1323,17 @@
       [
         "75024A48-0680-446E-B786-B04F386BD9DC",
         "Root",
-        "start"
+        "start",
+        "startPiece_geo_grp",
+        "startPiece"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "75024A48-0680-446E-B786-B04F386BD9DC",
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -1112,31 +1357,7 @@
         "start",
         "startPiece_geo_grp",
         "startPiece",
-        "aquariumGlass_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "75024A48-0680-446E-B786-B04F386BD9DC",
-        "Root",
-        "start",
-        "startPiece_geo_grp",
-        "startPiece",
         "trapDoorR_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "75024A48-0680-446E-B786-B04F386BD9DC",
-        "Root",
-        "start",
-        "startPiece_geo_grp",
-        "startPiece",
-        "r_door_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -1156,7 +1377,9 @@
       },
       [
         "75024A48-0680-446E-B786-B04F386BD9DC",
-        "Root"
+        "Root",
+        "start",
+        "startPiece_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -1165,21 +1388,7 @@
       [
         "75024A48-0680-446E-B786-B04F386BD9DC",
         "Root",
-        "start",
-        "startPiece_geo_grp",
-        "startPiece",
-        "aquarium_lights_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "75024A48-0680-446E-B786-B04F386BD9DC",
-        "Root",
-        "start",
-        "startPiece_geo_grp",
-        "startPiece"
+        "start"
       ],
       {
         "isExpanded" : true,
@@ -1201,7 +1410,9 @@
         "75024A48-0680-446E-B786-B04F386BD9DC",
         "Root",
         "start",
-        "startPiece_geo_grp"
+        "startPiece_geo_grp",
+        "startPiece",
+        "aquariumGlass_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -1230,312 +1441,6 @@
     "objectMetadataList" : [
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "l_door_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "startPiece_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_start_anim_001",
-        "adventureFish_ref_geometry",
-        "adventureFish_ref_r_eye_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_swim_001_anim",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03_half_1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03_top_glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece",
-        "l_door_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02",
-        "water",
-        "Looks",
-        "M_movingWater"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04",
-        "top",
-        "slide_04_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "top",
-        "Looks",
-        "lambert7SG1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "r_door_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_glow",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_half",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02",
-        "slide_02_bottom_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "Top",
-        "Looks",
-        "M_slidesTops"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "trapDoorR_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_water",
-        "startPiece_geo_grp",
-        "indvExports"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "place_piece_marker",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "mtl",
-        "M_slides04"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_slide_01_anim_001",
-        "Root_M",
-        "adventureFish_geo_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Materials",
-        "SelectionMarker",
-        "startPiece"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "swim_test_glb",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02_bottom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "mtl",
-        "M_metalRims1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "Looks",
-        "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_bottom",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_bottom",
-        "Looks",
-        "M_slides04"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
         "adventureFish_swin_slide01_full_anim_001",
         "Geom"
@@ -1547,9 +1452,9 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece"
+        "adventureFish_swim_slide_01_001",
+        "adventureFish_swim_slide_01_001",
+        "adventureFish_ref_skeleton"
       ],
       {
         "isExpanded" : true,
@@ -1558,60 +1463,7 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "adventureFish_end_anim_001",
-        "skeleton",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01",
-        "mtl",
-        "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01_top",
-        "mtl",
-        "M_slidesTops"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "mtl",
-        "M_rainbowLights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_glow_bottom",
+        "glow_top",
         "Materials"
       ],
       {
@@ -1621,73 +1473,9 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_02",
-        "top",
+        "Top",
         "Looks",
         "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece",
-        "trapDoorL_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Materials",
-        "LightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "adventureFish_WIP_001_ae",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03_bottom_flipped_glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_water",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece",
-        "trapDoorR_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -1707,601 +1495,8 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "trapDoorL_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_start_anim_001",
-        "adventureFish_ref_rig",
-        "adventureFish_ref_skeleton"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "AquariumGlass",
-        "glow",
-        "Glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_end_anim_001",
-        "skeleton",
-        "Root_M",
-        "hat_low_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end_half_1",
-        "group15",
-        "endPiece_slide_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_bottom",
-        "Looks",
-        "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01_top",
-        "mtl",
-        "M_slideLights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02_water",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece",
-        "aquarium_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "slide_03_top",
-        "Looks",
-        "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_bottom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "slide_03_top",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02_bottom",
-        "slide_02_geo_grp",
-        "slide_02_bottom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_glow_top",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01_glow",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_water",
-        "Looks",
-        "M_movingWater"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02_water",
-        "Looks",
-        "M_movingWater"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "mtl",
-        "M_aquarium1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_metal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "mtl",
-        "M_door1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_bottom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
         "adventureFish_swim_slide_01_001",
         "adventureFish_swim_slide_01_001"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02",
-        "top",
-        "Looks",
-        "M_slidesTops"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end_half_1",
-        "group15",
-        "endPiece_pool_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_swim_slide_01_001",
-        "adventureFish_swim_slide_01_001",
-        "adventureFish_ref_skeleton"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "AquariumGlass",
-        "glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03_top_glow",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "starSlide_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end",
-        "end_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03_top_glow",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "left_turn_usdz"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_slide_01_anim_001",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_start_anim_001",
-        "adventureFish_ref_geometry",
-        "adventureFish_ref_l_eye_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01_top",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_1",
-        "startPiece_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end",
-        "end_geo_grp",
-        "end_water"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "Top",
-        "Looks",
-        "lambert7SG1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "aquariumWaterDrain_start_anim_001",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_swim_slide_01_001",
-        "adventureFish_ref_skeleton"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "Top",
-        "Looks",
-        "light_71SG1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "Top",
-        "Looks",
-        "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_start_anim_001",
-        "adventureFish_ref_rig",
-        "adventureFish_ref_skeleton",
-        "adventureFish_ref_Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "right_turn_usdz"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_end_anim_001",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "elevator_up_usdz"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "Top",
-        "Looks",
-        "lambert7SG1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "top",
-        "Looks",
-        "light_71SG"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_start_anim_001",
-        "adventureFish_ref_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "tunnel_1x1_usdz"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "aquarium_lights_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_03",
-        "top",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_bottom",
-        "Looks",
-        "mat_slides01SG"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end_half_1",
-        "group15"
       ],
       {
         "isExpanded" : true,
@@ -2322,8 +1517,9 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "solidSpheres",
-        "Looks"
+        "AquariumGlass",
+        "glow",
+        "Glow"
       ],
       {
         "isExpanded" : true,
@@ -2332,9 +1528,69 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_01",
+        "slide_03_bottom_flipped_glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_start_anim_001",
+        "adventureFish_ref_rig"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "slide_03_top",
+        "Looks",
+        "M_lightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02_bottom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_bottom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "Top",
+        "Looks",
+        "lambert7SG1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
         "mtl",
-        "M_slides03"
+        "M_rainbowLights"
       ],
       {
         "isExpanded" : true,
@@ -2343,19 +1599,8 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_2",
-        "startPiece_geo_grp",
-        "startPiece",
-        "aquariumGlass_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_01_top"
+        "slide_05_bottom",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -2367,7 +1612,7 @@
         "start_1",
         "startPiece_geo_grp",
         "startPiece",
-        "aquariumGlass_geo_grp"
+        "l_door_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -2376,8 +1621,9 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start",
-        "glow_1"
+        "adventureFish_start_anim_001",
+        "adventureFish_ref_geometry",
+        "adventureFish_ref_l_eye_grp"
       ],
       {
         "isExpanded" : true,
@@ -2386,8 +1632,7 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_03",
-        "slide_03_water",
+        "slide_05_water",
         "Looks",
         "mat_movingWater1SG"
       ],
@@ -2398,8 +1643,9 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_02_bottom",
-        "slide_02_geo_grp"
+        "slide_05_bottom",
+        "Looks",
+        "mat_slides01SG"
       ],
       {
         "isExpanded" : true,
@@ -2408,7 +1654,8 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_aquarium_1"
+        "end",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -2417,7 +1664,204 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_02_top_glow"
+        "tunnel_1x1_usdz"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_end_anim_001",
+        "skeleton",
+        "Root_M",
+        "hat_low_geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_swim_001_anim",
+        "Animations"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "shapeTest_anim_2",
+        "rig"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "Top",
+        "Looks",
+        "lambert7SG1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "top",
+        "Looks",
+        "light_71SG"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02",
+        "water",
+        "Looks",
+        "M_movingWater"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "trapDoorL_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01",
+        "mtl",
+        "M_lightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_slide_01_anim_001",
+        "Root_M",
+        "adventureFish_geo_geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "r_door_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_end_anim_001",
+        "skeleton",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "slide_03_top",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_metal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "mtl",
+        "M_slides04"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "mtl"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_bottom",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -2449,9 +1893,25 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_04",
-        "Looks",
-        "M_slides04"
+        "start_aquarium_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "left_turn_usdz"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_05_bottom"
       ],
       {
         "isExpanded" : true,
@@ -2461,17 +1921,7 @@
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
         "start",
-        "mtl",
-        "M_lightsMetal"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "tunnel_1x1_old",
+        "adventureFish_WIP_001_ae",
         "Materials"
       ],
       {
@@ -2481,10 +1931,7 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece",
-        "r_door_geo_grp"
+        "right_turn_usdz"
       ],
       {
         "isExpanded" : true,
@@ -2493,8 +1940,9 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_water",
-        "startPiece_geo_grp"
+        "end_half_1",
+        "group15",
+        "endPiece_slide_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -2503,19 +1951,10 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "slide_01",
-        "water",
+        "slide_03",
+        "top",
         "Looks",
-        "mat_movingWater1SG"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Materials",
-        "RainbowLights"
+        "lambert7SG1"
       ],
       {
         "isExpanded" : true,
@@ -2524,141 +1963,7 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "start_1",
-        "startPiece_geo_grp",
-        "startPiece",
-        "starSlide_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_start_anim_001",
-        "adventureFish_ref_rig"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_swim_slide_01_001",
-        "adventureFish_ref_skeleton",
-        "adventureFish_ref_Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_water",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start_old"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "end",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_end_anim_001",
-        "skeleton"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "start",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_bottom",
-        "Looks"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "goal_old",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_02",
-        "Looks",
-        "M_slides03"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "glow_top",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_05_water",
-        "Looks",
-        "mat_movingWater1SG"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "slide_04_top",
+        "Top",
         "Looks",
         "M_slidesTops"
       ],
@@ -2669,18 +1974,8 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
-        "shapeTest_anim_2",
-        "rig"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
-        "Root",
-        "adventureFish_swim_001_anim",
-        "Animations"
+        "start_2",
+        "mtl"
       ],
       {
         "isExpanded" : true,
@@ -2701,10 +1996,926 @@
       [
         "4593874D-DE41-44B3-9E94-50C9E5FAE440",
         "Root",
+        "slide_05_glow_bottom",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "top",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01",
+        "mtl"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_water",
+        "Looks",
+        "M_movingWater"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "tunnel_1x1_old",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02_bottom",
+        "slide_02_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_water",
+        "startPiece_geo_grp",
+        "indvExports"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_swim_slide_01_001",
+        "adventureFish_ref_skeleton"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04",
+        "Looks",
+        "M_slides04"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "mtl",
+        "M_aquarium1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02",
+        "top",
+        "Looks",
+        "M_slidesTops"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03_top_glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_water",
+        "mtl"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "end_half_1",
+        "group15"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03_half_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece",
+        "trapDoorL_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "AquariumGlass",
+        "glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02",
+        "top",
+        "Looks",
+        "M_lightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_start_anim_001",
+        "adventureFish_ref_rig",
+        "adventureFish_ref_skeleton"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "aquarium_lights_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01",
+        "mtl",
+        "M_slides03"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "swim_test_glb",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02_top_glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "l_door_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Materials",
+        "RainbowLights"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "aquariumWaterDrain_start_anim_001",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_end_anim_001",
+        "skeleton"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_05_glow_top",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02_water",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "Top",
+        "Looks",
+        "light_71SG1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "end_half_1",
+        "group15",
+        "endPiece_pool_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece",
+        "trapDoorR_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01_top",
+        "mtl",
+        "M_slidesTops"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "goal_old",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01_top"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02_bottom",
+        "slide_02_geo_grp",
+        "slide_02_bottom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_bottom",
+        "Looks",
+        "M_slides04"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "end",
+        "end_geo_grp",
+        "end_water"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01_top",
+        "mtl"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_old"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "place_piece_marker",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03_top_glow",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece",
+        "aquariumGlass_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "mtl",
+        "M_metalRims1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "end",
+        "end_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02",
+        "Looks",
+        "M_slides03"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02_water",
+        "Looks",
+        "M_movingWater"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "starSlide_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Materials",
+        "SelectionMarker",
+        "startPiece"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
         "end_half_1",
         "group15",
         "endPiece_pool_geo_grp",
         "pSphere7"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01_glow",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "Looks",
+        "M_lightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "mtl",
+        "M_lightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_half",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_end_anim_001",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_water",
+        "startPiece_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "aquariumGlass_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03_top_glow",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_top",
+        "Looks",
+        "M_slidesTops"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "solidSpheres",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01",
+        "water",
+        "Looks",
+        "mat_movingWater1SG"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece",
+        "r_door_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04",
+        "top",
+        "slide_04_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_start_anim_001",
+        "adventureFish_ref_geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Materials",
+        "LightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_01_top",
+        "mtl",
+        "M_slideLights"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "end",
+        "mtl"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_02",
+        "slide_02_bottom_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_start_anim_001",
+        "adventureFish_ref_geometry",
+        "adventureFish_ref_r_eye_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_05_water",
+        "Looks"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece",
+        "starSlide_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_2",
+        "startPiece_geo_grp",
+        "startPiece",
+        "trapDoorR_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_glow",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "glow_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "elevator_up_usdz"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_swim_001_anim",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_swim_slide_01_001",
+        "adventureFish_ref_skeleton",
+        "adventureFish_ref_Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start_1",
+        "startPiece_geo_grp",
+        "startPiece",
+        "aquarium_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_slide_01_anim_001",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_04_bottom",
+        "Looks",
+        "M_lightsMetal"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "start",
+        "mtl",
+        "M_door1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "slide_03",
+        "slide_03_water",
+        "Looks",
+        "mat_movingWater1SG"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "4593874D-DE41-44B3-9E94-50C9E5FAE440",
+        "Root",
+        "adventureFish_start_anim_001",
+        "adventureFish_ref_rig",
+        "adventureFish_ref_skeleton",
+        "adventureFish_ref_Root_M"
       ],
       {
         "isExpanded" : true,
@@ -2716,8 +2927,7 @@
     "objectMetadataList" : [
       [
         "A2B01108-BF69-45D7-9E99-5408B21C2084",
-        "Root",
-        "M_WaterFall"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -2725,7 +2935,8 @@
       },
       [
         "A2B01108-BF69-45D7-9E99-5408B21C2084",
-        "Root"
+        "Root",
+        "M_WaterFall"
       ],
       {
         "isExpanded" : true,
@@ -2737,8 +2948,7 @@
     "objectMetadataList" : [
       [
         "A7CBD44C-AF89-481F-8FB6-D12961205B4D",
-        "Root",
-        "M_lightsRims"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -2746,7 +2956,8 @@
       },
       [
         "A7CBD44C-AF89-481F-8FB6-D12961205B4D",
-        "Root"
+        "Root",
+        "M_lightsRims"
       ],
       {
         "isExpanded" : true,
@@ -2781,101 +2992,7 @@
         "A0739496-998B-482F-BFB9-D6EF16A892B5",
         "Root",
         "slide_05",
-        "Top",
-        "slide_05_top_geo_grp",
-        "slide_05_top"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "water"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "slide_05_bottom_geo_grp",
-        "slide_05_bottom_lights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "glow_bottom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
         "selection_marker"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "glow_bottom",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "glow_top"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "Top",
-        "slide_05_top_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "A0739496-998B-482F-BFB9-D6EF16A892B5",
-        "Root",
-        "slide_05",
-        "selection_marker",
-        "Geom"
       ],
       {
         "isExpanded" : true,
@@ -2894,7 +3011,8 @@
         "A0739496-998B-482F-BFB9-D6EF16A892B5",
         "Root",
         "slide_05",
-        "slide_05_bottom_geo_grp"
+        "Top",
+        "slide_05_top_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -2917,7 +3035,16 @@
         "A0739496-998B-482F-BFB9-D6EF16A892B5",
         "Root",
         "slide_05",
-        "Top"
+        "glow_bottom",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -2933,6 +3060,90 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "selection_marker",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "glow_bottom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "slide_05_bottom_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "slide_05_bottom_geo_grp",
+        "slide_05_bottom_lights"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "Top"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "Top",
+        "slide_05_top_geo_grp",
+        "slide_05_top"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "glow_top"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A0739496-998B-482F-BFB9-D6EF16A892B5",
+        "Root",
+        "slide_05",
+        "water"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
@@ -2940,8 +3151,7 @@
     "objectMetadataList" : [
       [
         "B3E992B0-BF41-45C5-B1E5-14D525D11C1C",
-        "Root",
-        "M_SlideLights"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -2949,7 +3159,8 @@
       },
       [
         "B3E992B0-BF41-45C5-B1E5-14D525D11C1C",
-        "Root"
+        "Root",
+        "M_SlideLights"
       ],
       {
         "isExpanded" : true,
@@ -2959,24 +3170,6 @@
   },
   "B8EA38B3-65D1-4F51-9269-A7369C7D5085" : {
     "objectMetadataList" : [
-      [
-        "B8EA38B3-65D1-4F51-9269-A7369C7D5085",
-        "Root",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "B8EA38B3-65D1-4F51-9269-A7369C7D5085",
-        "Root",
-        "M_SlideLights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
       [
         "B8EA38B3-65D1-4F51-9269-A7369C7D5085",
         "Root",
@@ -2992,6 +3185,14 @@
         "slide_05",
         "selection_marker",
         "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B8EA38B3-65D1-4F51-9269-A7369C7D5085",
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -3017,7 +3218,17 @@
       },
       [
         "B8EA38B3-65D1-4F51-9269-A7369C7D5085",
+        "Root",
         "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "B8EA38B3-65D1-4F51-9269-A7369C7D5085",
+        "Root",
+        "M_SlideLights"
       ],
       {
         "isExpanded" : true,
@@ -3026,253 +3237,31 @@
     ]
   },
   "BABC2FA4-7439-4358-9650-DF962EB8F8BE" : {
+    "cameraTransform" : [
+      0.9902746,
+      -1.30147875e-08,
+      -0.13912646,
+      0,
+      -0.03992468,
+      0.95794046,
+      -0.28417602,
+      0,
+      0.13327472,
+      0.28696695,
+      0.9486242,
+      0,
+      0.051979776,
+      0.17230254,
+      0.34428102,
+      1
+    ],
     "objectMetadataList" : [
       [
         "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
         "Root",
         "start",
-        "mtl",
-        "M_door1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "idle_anim",
-        "Root_M",
-        "adventureFish_geo_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "startPiece_geo_grp",
-        "startPiece"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "M_Glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "adventureFish_start_anim_001",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "FishGlassRef"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "startPiece_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "start_water",
-        "mtl"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "M_MovingWater"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "start_water",
-        "startPiece_geo_grp",
-        "indvExports"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
         "start_water",
         "startPiece_geo_grp"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "adventureFish_start_anim_001",
-        "Root_M",
-        "adventureFish_geo_geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "aquariumWaterDrain_start_anim_001",
-        "geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "selection_marker",
-        "Geom",
-        "Plane_001"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "selection_marker",
-        "Geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "idle_anim",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "M_MovingWater",
-        "slower"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "M_SlideLights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start_glow",
-        "waterDrain_root_jnt"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "mtl",
-        "M_slides04"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "M_MovingWater",
-        "faster"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "waterDrain02_start_anim_001",
-        "waterDrain_ref_rig"
       ],
       {
         "isExpanded" : true,
@@ -3284,17 +3273,6 @@
         "start",
         "Water",
         "geometry"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
-        "Root",
-        "start",
-        "mtl",
-        "M_metalRims1"
       ],
       {
         "isExpanded" : true,
@@ -3317,9 +3295,217 @@
         "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
         "Root",
         "start",
+        "mtl",
+        "M_metalRims1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "idle_anim",
+        "Root_M",
+        "adventureFish_geo_geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "M_MovingWater",
+        "slower"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "startPiece_geo_grp",
+        "startPiece"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "M_SlideLights"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
         "idle_anim",
         "Root_M",
         "Skeleton"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "startPiece_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "M_Glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "waterDrain02_start_anim_001",
+        "waterDrain_ref_rig"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "M_MovingWater",
+        "faster"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "FishGlassRef"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "mtl",
+        "M_door1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "mtl",
+        "M_slides04"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "selection_marker",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "adventureFish_start_anim_001",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "idle_anim",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "start_water",
+        "startPiece_geo_grp",
+        "indvExports"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "aquariumWaterDrain_start_anim_001",
+        "geometry"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "adventureFish_start_anim_001",
+        "Root_M",
+        "adventureFish_geo_geometry"
       ],
       {
         "isExpanded" : true,
@@ -3337,11 +3523,54 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "start_water",
+        "mtl"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start_glow",
+        "waterDrain_root_jnt"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BABC2FA4-7439-4358-9650-DF962EB8F8BE",
+        "Root",
+        "start",
+        "selection_marker",
+        "Geom",
+        "Plane_001"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       }
     ]
   },
   "C03BB7AD-BBF3-4C15-A5CD-83FBF2681AF8" : {
     "objectMetadataList" : [
+      [
+        "C03BB7AD-BBF3-4C15-A5CD-83FBF2681AF8",
+        "Root",
+        "adventureFish_slide_05_anim_001",
+        "Root_M"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
       [
         "C03BB7AD-BBF3-4C15-A5CD-83FBF2681AF8",
         "Root"
@@ -3369,16 +3598,6 @@
       {
         "isExpanded" : true,
         "isLocked" : false
-      },
-      [
-        "C03BB7AD-BBF3-4C15-A5CD-83FBF2681AF8",
-        "Root",
-        "adventureFish_slide_05_anim_001",
-        "Root_M"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
       }
     ]
   },
@@ -3395,7 +3614,33 @@
     ]
   },
   "C48C497A-9C38-42FF-89CE-934049DCC45C" : {
+    "cameraTransform" : [
+      0.94398475,
+      -2.6015563e-08,
+      -0.32998908,
+      0,
+      -0.2971686,
+      0.43477172,
+      -0.8500967,
+      0,
+      0.14346997,
+      0.90054065,
+      0.41041788,
+      0,
+      0.15242408,
+      0.38584515,
+      0.25694442,
+      1
+    ],
     "objectMetadataList" : [
+      [
+        "C48C497A-9C38-42FF-89CE-934049DCC45C",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
       [
         "C48C497A-9C38-42FF-89CE-934049DCC45C",
         "Root",
@@ -3414,9 +3659,40 @@
       {
         "isExpanded" : true,
         "isLocked" : false
+      }
+    ]
+  },
+  "C92558ED-F784-47EE-AB36-0AD13A98F65D" : {
+    "cameraTransform" : [
+      0.964809,
+      1.6557067e-10,
+      -0.26295152,
+      0,
+      -0.07710822,
+      0.95603853,
+      -0.2829217,
+      0,
+      0.25139186,
+      0.2932411,
+      0.9223945,
+      0,
+      0.13491656,
+      0.1573762,
+      0.49502915,
+      1
+    ],
+    "objectMetadataList" : [
+      [
+        "C92558ED-F784-47EE-AB36-0AD13A98F65D",
+        "Root",
+        "M_EndWater"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       },
       [
-        "C48C497A-9C38-42FF-89CE-934049DCC45C",
+        "C92558ED-F784-47EE-AB36-0AD13A98F65D",
         "Root"
       ],
       {
@@ -3429,7 +3705,10 @@
     "objectMetadataList" : [
       [
         "D05B192A-11B6-4EE3-BE07-7BB4963859C9",
-        "Root"
+        "Root",
+        "adventureFish_end_anim_001",
+        "Root_M",
+        "adventureFish_geo_geometry"
       ],
       {
         "isExpanded" : true,
@@ -3448,9 +3727,7 @@
       [
         "D05B192A-11B6-4EE3-BE07-7BB4963859C9",
         "Root",
-        "adventureFish_end_anim_001",
-        "Root_M",
-        "adventureFish_geo_geometry"
+        "adventureFish_end_anim_001"
       ],
       {
         "isExpanded" : true,
@@ -3458,8 +3735,7 @@
       },
       [
         "D05B192A-11B6-4EE3-BE07-7BB4963859C9",
-        "Root",
-        "adventureFish_end_anim_001"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -3483,8 +3759,7 @@
     "objectMetadataList" : [
       [
         "DE873135-D1CE-445F-BA5F-8FFC04DBA40A",
-        "Root",
-        "place_piece_marker"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -3492,7 +3767,8 @@
       },
       [
         "DE873135-D1CE-445F-BA5F-8FFC04DBA40A",
-        "Root"
+        "Root",
+        "place_piece_marker"
       ],
       {
         "isExpanded" : true,
@@ -3502,6 +3778,38 @@
   },
   "E56BBC7E-79B6-437B-897D-D29F99F2DAA5" : {
     "objectMetadataList" : [
+      [
+        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
+        "Root",
+        "slide_01",
+        "selection_marker",
+        "selection_marker_plane"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
+        "Root",
+        "adventureFish_swim_slide01_anim",
+        "rig",
+        "skeleton",
+        "Root_M",
+        "Skeleton"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
       [
         "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
         "Root",
@@ -3515,7 +3823,7 @@
       [
         "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
         "Root",
-        "M_SlideLights"
+        "M_SlideBottom"
       ],
       {
         "isExpanded" : true,
@@ -3524,9 +3832,8 @@
       [
         "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
         "Root",
-        "slide_01",
-        "selection_marker",
-        "selection_marker_plane"
+        "adventureFish_swim_slide01_anim",
+        "geometry"
       ],
       {
         "isExpanded" : true,
@@ -3549,36 +3856,6 @@
         "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
         "Root",
         "M_MovingWater"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
-        "Root",
-        "M_Glow"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
-        "Root",
-        "slide_01",
-        "adventureFish_slide01_noGlass_ride_animation",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
-        "Root",
-        "adventureFish_swim_slide01_anim",
-        "geometry"
       ],
       {
         "isExpanded" : true,
@@ -3607,40 +3884,39 @@
       },
       [
         "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
-        "Root",
-        "M_SlideBottom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
-        "Root",
-        "adventureFish_swim_slide01_anim",
-        "rig",
-        "skeleton",
-        "Root_M",
-        "Skeleton"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
         "Root",
         "adventureFish_swim_slide01_anim",
         "rig",
         "skeleton"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
+        "Root",
+        "slide_01",
+        "adventureFish_slide01_noGlass_ride_animation",
+        "Materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
+        "Root",
+        "M_Glow"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "E56BBC7E-79B6-437B-897D-D29F99F2DAA5",
+        "Root",
+        "M_SlideLights"
       ],
       {
         "isExpanded" : true,
@@ -3682,8 +3958,7 @@
     "objectMetadataList" : [
       [
         "E8446391-194D-4FE1-9067-680B5EB0367B",
-        "Root",
-        "M_Grass"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -3691,7 +3966,8 @@
       },
       [
         "E8446391-194D-4FE1-9067-680B5EB0367B",
-        "Root"
+        "Root",
+        "M_Grass"
       ],
       {
         "isExpanded" : true,
@@ -3703,8 +3979,7 @@
     "objectMetadataList" : [
       [
         "EF9C96CC-1041-4725-B7CB-8AF39777639A",
-        "Root",
-        "M_Grass"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -3712,7 +3987,8 @@
       },
       [
         "EF9C96CC-1041-4725-B7CB-8AF39777639A",
-        "Root"
+        "Root",
+        "M_Grass"
       ],
       {
         "isExpanded" : true,
@@ -3732,9 +4008,7 @@
         "Root",
         "end",
         "end_geo_grp",
-        "end_slide_geo_grp",
-        "end_slide_bottom_geo_grp",
-        "end_slide_bottom_lights"
+        "end_water"
       ],
       {
         "isExpanded" : true,
@@ -3745,15 +4019,7 @@
         "Root",
         "end",
         "end_geo_grp",
-        "end_water"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "F6A76025-FE39-46BA-AA5E-C95D0FC6BEE0",
-        "Root"
+        "end_rainbow_lights"
       ],
       {
         "isExpanded" : true,
@@ -3775,7 +4041,9 @@
         "Root",
         "end",
         "end_geo_grp",
-        "end"
+        "end_slide_geo_grp",
+        "end_slide_bottom_geo_grp",
+        "end_slide_bottom_lights"
       ],
       {
         "isExpanded" : true,
@@ -3795,10 +4063,18 @@
       },
       [
         "F6A76025-FE39-46BA-AA5E-C95D0FC6BEE0",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F6A76025-FE39-46BA-AA5E-C95D0FC6BEE0",
         "Root",
         "end",
         "end_geo_grp",
-        "end_rainbow_lights"
+        "end"
       ],
       {
         "isExpanded" : true,
@@ -3816,20 +4092,7 @@
       [
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
-        "slide_02",
-        "slide_02_bottom_geo_grp",
-        "slides_02_bottom_lights"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "FC67C342-336C-4FD4-973E-90FACF4F4815",
-        "Root",
-        "slide_02",
-        "top",
-        "Looks"
+        "SelectionMarkerRef"
       ],
       {
         "isExpanded" : true,
@@ -3850,7 +4113,16 @@
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
         "slide_02",
-        "slide_02_bottom_geo_grp"
+        "slide_02_bottom_geo_grp",
+        "slides_02_bottom_lights"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "FC67C342-336C-4FD4-973E-90FACF4F4815",
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -3859,7 +4131,20 @@
       [
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
-        "SelectionMarkerRef"
+        "slide_02",
+        "glow_bottom",
+        "Geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "FC67C342-336C-4FD4-973E-90FACF4F4815",
+        "Root",
+        "slide_02",
+        "glow_bottom",
+        "Materials"
       ],
       {
         "isExpanded" : true,
@@ -3879,16 +4164,7 @@
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
         "slide_02",
-        "glow_bottom",
-        "Materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "FC67C342-336C-4FD4-973E-90FACF4F4815",
-        "Root"
+        "slide_02_bottom_geo_grp"
       ],
       {
         "isExpanded" : true,
@@ -3898,16 +4174,7 @@
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
         "slide_02",
-        "top"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "FC67C342-336C-4FD4-973E-90FACF4F4815",
-        "Root",
-        "slide_02"
+        "glow_bottom"
       ],
       {
         "isExpanded" : true,
@@ -3929,7 +4196,8 @@
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
         "slide_02",
-        "glow_bottom"
+        "top",
+        "Looks"
       ],
       {
         "isExpanded" : true,
@@ -3939,8 +4207,16 @@
         "FC67C342-336C-4FD4-973E-90FACF4F4815",
         "Root",
         "slide_02",
-        "glow_bottom",
-        "Geom"
+        "top"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "FC67C342-336C-4FD4-973E-90FACF4F4815",
+        "Root",
+        "slide_02"
       ],
       {
         "isExpanded" : true,

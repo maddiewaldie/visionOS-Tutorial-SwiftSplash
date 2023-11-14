@@ -132,6 +132,10 @@ extension TrackBuildingView {
                 Task(priority: .high) { @MainActor in
                     defer {
                         isRotating = false
+                        Task {
+                            try await Task.sleep(for: .seconds(0.25))
+                            appState.showEditAttachment()
+                        }
                     }
                     
                     try? await loopForSnap(info: info, entity: entity, radians: radians)

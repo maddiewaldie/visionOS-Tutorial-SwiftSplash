@@ -299,4 +299,48 @@ extension AppState {
             entity.connectableStateComponent?.nextPiece = nil
         }
     }
+    
+    public func addHoverEffectToConnectables() {
+        let entities = root.scene?.performQuery(connectableQuery)
+        
+        entities?.forEach { entity in
+            entity.components.set(HoverEffectComponent())
+        }
+    }
+    
+    public func removeHoverEffectFromConnectibles() {
+        let entities = root.scene?.performQuery(connectableQuery)
+        
+        entities?.forEach { entity in
+            entity.components[HoverEffectComponent.self] = nil
+        }
+    }
+    
+    public enum RotateDirection {
+        case clockwise, counterClockwise
+    }
+    
+    public func rotateSelectedEntities(direction: RotateDirection = .clockwise) {
+        guard let trackPieceBeingEdited = trackPieceBeingEdited else { return }
+        let rotationAmount = (direction == .clockwise) ? Float.pi / 2 : -Float.pi / 2
+        if additionalSelectedTrackPieces.isEmpty {
+            trackPieceBeingEdited.sceneOrientation *= simd_quatf(angle: Float(rotationAmount), axis: SIMD3<Float>.up)
+            trackPieceBeingEdited.sceneOrientation = trackPieceBeingEdited.sceneOrientation.normalized
+        } else {
+            let parentEntity = Entity()
+            root.addChild(parentEntity)
+            parentEntity.scenePosition = selectedTrackRotationPoint
+            trackPieceBeingEdited.setParent(parentEntity, preservingWorldTransform: true)
+            for entity in additionalSelectedTrackPieces {
+                entity.setParent(parentEntity, preservingWorldTransform: true)
+            }
+            parentEntity.sceneOrientation *= simd_quatf(angle: Float(rotationAmount), axis: SIMD3<Float>.up)
+            parentEntity.sceneOrientation = parentEntity.sceneOrientation.normalized
+            trackPieceBeingEdited.setParent(root, preservingWorldTransform: true)
+            for entity in additionalSelectedTrackPieces {
+                entity.setParent(root, preservingWorldTransform: true)
+            }
+            parentEntity.removeFromParent()
+        }
+    }
 }

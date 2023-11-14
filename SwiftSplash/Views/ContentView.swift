@@ -75,6 +75,7 @@ struct ContentView: View {
                             } label: {
                                 Label("Delete ride", systemImage: "trash.fill")
                             }
+                            .accessibilityElement()
                             .confirmationDialog(
                                 "Are you sure you want to delete all pieces and start over?",
                                 isPresented: $confirmationShown,
@@ -94,12 +95,7 @@ struct ContentView: View {
                                 if appState.trackPieceBeingEdited == nil {
                                     appState.trackPieceBeingEdited = appState.startPiece
                                     appState.trackPieceBeingEdited?.connectableStateComponent?.isSelected = true
-                                    if let editMenu = appState.editAttachment {
-                                        if editMenu.parent != nil {
-                                            editMenu.removeFromParent()
-                                        }
-                                        appState.startPiece?.uiAnchor?.addChild(editMenu)
-                                    }
+                                    appState.showEditAttachment()
                                 }
                                 
                                 appState.updateConnections()
@@ -108,6 +104,7 @@ struct ContentView: View {
                             } label: {
                                 Label("Select All", systemImage: "plus.square.dashed")
                             }
+                            .accessibilityElement()
                             
                             Button {
                                 appState.isVolumeMuted.toggle()
@@ -129,6 +126,7 @@ struct ContentView: View {
                                 .fontWeight(.semibold)
                                 .frame(width: 100)
                             }
+                            .accessibilityElement()
                         }
                         .toolbar(.visible, for: .navigationBar)
                         .onChange(of: appState.trackPieceBeingEdited) { _, trackPieceBeingEdited in
@@ -136,10 +134,9 @@ struct ContentView: View {
                             trackPieceBeingEdited.connectableStateComponent?.isSelected = true
                             appState.updateSelection()
                         }
-
                 }
                 .frame(width: 460, height: !isReducedHeight ? 540 : 200)
-
+                
                 // If someone closes the main window, dismiss the immersive space. If placing the first piece, ignore it.
                 .onChange(of: scenePhase) { _, newPhase in
                     Task {
@@ -158,6 +155,7 @@ struct ContentView: View {
                             // Went back.
                             shouldCancelRide = true
                             appState.resetRideAnimations()
+                            appState.addHoverEffectToConnectables()
                             appState.goalPiece?.stopWaterfall()
                             appState.returnToBuildingTrack()
                             appState.isRideRunning = false

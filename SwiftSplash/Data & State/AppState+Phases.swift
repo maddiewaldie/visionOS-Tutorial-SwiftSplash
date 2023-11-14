@@ -68,6 +68,7 @@ extension AppState {
         startPiece?.setRideLights(to: true)
         goalPiece?.setRideLights(to: true)
         pauseStartTime = 0
+        removeHoverEffectFromConnectibles()
         
         rideStartTime = Date.timeIntervalSinceReferenceDate
         if let startPiece = startPiece {
@@ -82,8 +83,6 @@ extension AppState {
                         if component.alwaysAnimates {
                             for animation in entity.availableAnimations {
                                 let animation = animation.repeat(count: Int.max)
-                                let animName = animation.name ?? "Unnamed animation"
-                                logger.debug("Found animation \(animName) on \(entity.name)")
                                 let controller = entity.playAnimation(animation, transitionDuration: 0.0, startsPaused: false)
                                 rideAnimationcontrollers.append(controller)
                                 controller.resume()
@@ -105,6 +104,7 @@ extension AppState {
             startRideLights()
             startWaterFilling()
             calculateRideDuration()
+            hideEditAttachment()
             startPiece.playRideAnimations()
         }
         
@@ -117,6 +117,9 @@ extension AppState {
             resetBoard()
             isRideRunning = false
             rideStartTime = 0
+            if trackPieceBeingEdited != nil {
+                showEditAttachment()
+            }
         }
     }
     

@@ -40,10 +40,12 @@ struct TrackBuildingView: View {
             
             if let editMenu = attachments.entity(for: AttachmentIDs.editMenu) {
                 appState.editAttachment = editMenu
-                if let piece = appState.trackPieceBeingEdited {
-                    piece.uiAnchor?.addChild(editMenu)
+                editMenu.components.set(BillboardComponent())
+                
+                if appState.trackPieceBeingEdited != nil {
+                    appState.showEditAttachment()
                 } else {
-                    editMenu.removeFromParent()
+                    appState.hideEditAttachment()
                 }
             }
             if let startMenu = attachments.entity(for: AttachmentIDs.startCard) {
@@ -60,7 +62,7 @@ struct TrackBuildingView: View {
                 PlaceStartPieceView()
             }
         }
-        .gesture(DragGesture(minimumDistance: 1)
+        .gesture(DragGesture(minimumDistance: 10)
             .targetedToAnyEntity()
             .onChanged { value in
                 guard appState.phase == .buildingTrack || appState.phase == .placingStartPiece
@@ -86,6 +88,12 @@ struct TrackBuildingView: View {
                     handleRotationChanged(value, isEnded: true)
                 })
         )
+        .accessibilityAction(named: "Rotate selected pieces 90 degrees clockwise") {
+            appState.rotateSelectedEntities(direction: .clockwise)
+        }
+        .accessibilityAction(named: "Rotate selected pieces 90 degrees counter-clockwise") {
+            appState.rotateSelectedEntities(direction: .counterClockwise)
+        }
         .simultaneousGesture(
             TapGesture(count: 2)
                 .targetedToAnyEntity()
@@ -133,9 +141,7 @@ struct TrackBuildingView: View {
                                 appState.clearSelection()
                                 entity.connectableStateComponent?.isSelected = false
                                 
-                                if let editMenu = appState.editAttachment, editMenu.parent != nil {
-                                    editMenu.removeFromParent()
-                                }
+                                appState.hideEditAttachment()
                                 appState.updateConnections()
                                 appState.updateSelection()
                             } else {
@@ -143,13 +149,7 @@ struct TrackBuildingView: View {
                                     appState.trackPieceBeingEdited = entity.connectableAncestor
                                     appState.trackPieceBeingEdited?.connectableStateComponent?.isSelected = true
                                     appState.clearSelection(keepPrimary: true)
-                                    if let editMenu = appState.editAttachment {
-                                        if editMenu.parent != nil {
-                                            editMenu.removeFromParent()
-                                        }
-                                        
-                                        entity.uiAnchor?.addChild(editMenu)
-                                    }
+                                    appState.showEditAttachment()
                                 }
                             }
                             appState.updateConnections()

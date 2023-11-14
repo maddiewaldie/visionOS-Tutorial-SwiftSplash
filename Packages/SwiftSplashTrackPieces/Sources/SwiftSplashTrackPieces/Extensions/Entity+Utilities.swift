@@ -73,6 +73,12 @@ public extension Entity {
         set { components[ConnectableComponent.self] = newValue }
     }
     
+    /// Property for getting or setting an entity's `CollisionComponent`.
+    var collisionComponent: CollisionComponent? {
+        get { components[CollisionComponent.self] }
+        set { components[CollisionComponent.self] = newValue }
+    }
+    
     /// Property for getting or setting an entity's `ConnectableStateComponent`.
     var connectableStateComponent: ConnectableStateComponent? {
         get { components[ConnectableStateComponent.self] }
@@ -101,6 +107,11 @@ public extension Entity {
     var glowComponent: GlowComponent? {
         get { components[GlowComponent.self] }
         set { components[GlowComponent.self] = newValue }
+    }
+    
+    var particleEmitterComponent: ParticleEmitterComponent? {
+        get { components[ParticleEmitterComponent.self] }
+        set { components[ParticleEmitterComponent.self] = newValue }
     }
 }
 

@@ -22,6 +22,8 @@ struct EditTrackPieceView: View {
                     .frame(width: 180)
                 }
                 .padding(.leading, 20)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Select all ride pieces that connect back to this piece."))
                 
                 Spacer()
                 
@@ -39,6 +41,9 @@ struct EditTrackPieceView: View {
                         .labelStyle(.iconOnly)
                 }
                 .disabled(appState.trackPieceBeingEdited == appState.startPiece)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Delete all selected ride pieces."))
+                
                 Button {
                     appState.clearSelection(keepPrimary: false)
                 } label: {
@@ -46,6 +51,8 @@ struct EditTrackPieceView: View {
                         .labelStyle(.iconOnly)
                 }
                 .padding(.trailing, 5)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Clear the selection and dismiss this window."))
             }
             .padding(.vertical)
             .frame(width: 350)
@@ -63,6 +70,8 @@ struct EditTrackPieceView: View {
                     }
                     .padding(.vertical, 10)
                 }
+                .accessibilityElement()
+                .accessibilityLabel(Text("Change all selected pieces to use a metal material."))
                 
                 Button {
                     appState.setMaterialForAllSelected(.wood)
@@ -75,6 +84,9 @@ struct EditTrackPieceView: View {
                     }
                     .padding(.vertical, 10)
                 }
+                .accessibilityElement()
+                .accessibilityLabel(Text("Change all selected pieces to use a wood material."))
+                
                 Button {
                     appState.setMaterialForAllSelected(.plastic)
                 } label: {
@@ -86,6 +98,8 @@ struct EditTrackPieceView: View {
                     }
                     .padding(.vertical, 10)
                 }
+                .accessibilityElement()
+                .accessibilityLabel(Text("Change all selected pieces to use a plastic material."))
             }
             .buttonBorderShape(.roundedRectangle(radius: 15))
             .buttonStyle(.borderless)

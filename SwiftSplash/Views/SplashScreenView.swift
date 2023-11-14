@@ -28,6 +28,7 @@ struct SplashScreenView: View {
                 Button("Start Building") {
                     appState.startBuilding()
                 }
+                .accessibilityElement()
             }
         }
         .offset(y: 100)

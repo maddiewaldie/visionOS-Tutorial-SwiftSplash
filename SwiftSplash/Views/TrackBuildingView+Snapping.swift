@@ -169,7 +169,7 @@ extension TrackBuildingView {
         }
     }
 }
-/// This function performs  a linear interpolation on a provided `Float` value based on a start, end, and progress value. It applies
+/// This function performs a linear interpolation on a provided `Float` value based on a start, end, and progress value. It applies
 /// a quartic  calculation to the result, which causes snapping to accelerate as it gets closer to the snap point. This gives a more
 /// natural feel, much like a magnet accelerating toward the opposite pole of another magnet.
 func quarticLerp(_ start: Float, _ end: Float, _ alpha: Float) -> Float {
@@ -178,7 +178,7 @@ func quarticLerp(_ start: Float, _ end: Float, _ alpha: Float) -> Float {
     
     return start * (1.0 - alpha) + end * alpha
 }
-/// This function performs  a linear interpolation on a provided `SIMD3<Float>` value based on a start, end, and progress value. It applies
+/// This function performs a linear interpolation on a provided `SIMD3<Float>` value based on a start, end, and progress value. It applies
 /// a quartic calculation to the result, which causes snapping to accelerate as it gets closer to the snap point. This gives a more
 /// natural feel, much like a magnet accelerating toward the opposite pole of another magnet.
 func quarticLerp(_ start: SIMD3<Float>, _ end: SIMD3<Float>, _ alpha: Float) -> SIMD3<Float> {

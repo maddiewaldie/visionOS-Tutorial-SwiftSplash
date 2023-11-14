@@ -25,6 +25,9 @@ struct PieceShelfTrackButtonsView: View {
                     }
                 )
                 .disabled(appState.phase != .buildingTrack)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Add straight slide piece."))
+                
                 ImageButton(
                     title: "Right Turn",
                     imageName: appState.rightTurnImageName,
@@ -34,6 +37,9 @@ struct PieceShelfTrackButtonsView: View {
                     }
                 )
                 .disabled(appState.phase != .buildingTrack)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Add right turn piece."))
+                
                 ImageButton(
                     title: "Left Turn",
                     imageName: appState.leftTurnImageName,
@@ -43,6 +49,8 @@ struct PieceShelfTrackButtonsView: View {
                     }
                 )
                 .disabled(appState.phase != .buildingTrack)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Add left turn piece."))
             }
             GridRow {
                 ImageButton(
@@ -54,8 +62,11 @@ struct PieceShelfTrackButtonsView: View {
                     }
                 )
                 .disabled(appState.phase != .buildingTrack)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Add straight slide piece."))
+                
                 ImageButton(
-                    title: "Loop",
+                    title: "Spiral",
                     imageName: appState.spiralImageName,
                     buttonAction: { button in
                         appState.clearSelection()
@@ -63,6 +74,8 @@ struct PieceShelfTrackButtonsView: View {
                     }
                 )
                 .disabled(appState.phase != .buildingTrack)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Add spiral slide piece."))
                 ImageButton(
                     title: "Finish Line",
                     imageName: appState.goalImageNamne,
@@ -74,6 +87,8 @@ struct PieceShelfTrackButtonsView: View {
                     }
                 )
                 .disabled(endPieceIsInRealityView)
+                .accessibilityElement()
+                .accessibilityLabel(Text("Add finish line."))
                 .onAppear {
                     Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
                         endPieceIsInRealityView = appState.goalPiece?.parent != nil

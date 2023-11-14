@@ -83,10 +83,10 @@ extension AppState {
         self.add(template: result.entity, for: pieceKey.key)
         setupConnectable(entity: result.entity)
         result.entity.components.set(HoverEffectComponent())
-        result.entity.generateCollisionShapes(recursive: true)
         result.entity.setUpAnimationVisibility()
         handleTrackPieceTransparency(result.entity)
         result.entity.setWaterLevel(level: 0)
+        result.entity.adjustCollisionBox(scaleBy: [1.0, 0.5, 1.0], offsetBy: [0, 0, 0])
     }
     
     /// This function sets up the start piece after load.
@@ -98,9 +98,9 @@ extension AppState {
         setStartPiece(result.entity)
         setStartPieceInitialPosition()
         setupConnectable(entity: result.entity)
-        result.entity.generateCollisionShapes(recursive: true)
         result.entity.playIdleAnimations()
         handleStartPieceTransparency(result.entity)
+        result.entity.adjustCollisionBox(scaleBy: [1.0, 0.9, 0.8], offsetBy: [0, 0.1, 0.038])
         
         self.placeMarker(at: result.entity)
         result.entity.connectableStateComponent?.isSelected = false
@@ -117,6 +117,7 @@ extension AppState {
         result.entity.setUpAnimationVisibility()
         result.entity.setWaterLevel(level: 0)
         handleEndPieceTransparency(result.entity)
+        result.entity.adjustCollisionBox(scaleBy: [0.95, 0.485, 0.8], offsetBy: [0, 0.11, -0.045])
     }
     
     /// This function loads the regular track pieces (everything except the start and end piece and the placement marker).

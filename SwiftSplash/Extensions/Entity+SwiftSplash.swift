@@ -102,12 +102,10 @@ public extension Entity {
             }
             for animation in entity.availableAnimations {
                 var animation = animation
-                let animName = animation.name ?? "Unnamed animation"
                 
                 if component.alwaysAnimates {
                     animation = animation.repeat(count: Int.max)
                 }
-                logger.debug("Found animation \(animName) on \(entity.name)")
                 
                 let controller = entity.playAnimation(animation, transitionDuration: 0.0, startsPaused: false)
                 rideAnimationcontrollers.append(controller)
@@ -148,6 +146,7 @@ public extension Entity {
         if let nextPiece = self.connectableStateComponent?.nextPiece, nextPiece.name == "end" {
             handleNextEndPiece()
             handleEndPiece()
+
         }
         
         if shouldCancelRide { return }
@@ -169,11 +168,12 @@ public extension Entity {
         
         guard let endPiece = self.connectableStateComponent?.nextPiece else { fatalError("Next piece is not the end piece.") }
         
-        endPiece.setRideLights(to: false)
-        endPiece.setAllParticleEmittersTo(to: true, except: [waterFallParticlesName])
+        endPiece.setAllParticleEmittersTo(to: true, except: [waterFallParticlesName, fishSplashParticleName])
         Task {
-            try await Task.sleep(for: .seconds(10))
-            endPiece.setAllParticleEmittersTo(to: false, except: [waterFallParticlesName])
+            try await Task.sleep(for: .seconds(1))
+            endPiece.makeFishSplash()
+            try await Task.sleep(for: .seconds(9))
+            endPiece.setAllParticleEmittersTo(to: false, except: [waterFallParticlesName, fishSplashParticleName])
         }
     }
     
@@ -224,6 +224,15 @@ public extension Entity {
         }
     }
     
+    func makeFishSplash() {
+        guard let splashParticlesEntity = findEntity(named: fishSplashParticleName),
+              var splashParticlesComponent = splashParticlesEntity.particleEmitterComponent else { return }
+        splashParticlesComponent.isEmitting = true
+        splashParticlesComponent.simulationState = .play
+        splashParticlesEntity.components.set(splashParticlesComponent)
+        isEnabled = true
+    }
+    
     func stopWaterfall() {
         self.forEachDescendant(withComponent: ParticleEmitterComponent.self) { entity, component in
             var component = component
@@ -251,6 +260,22 @@ public extension Entity {
                 let controller = entity.playAnimation(animation, transitionDuration: 0.0, startsPaused: false)
                 controller.resume()
             }
+        }
+    }
+    
+    func adjustCollisionBox(scaleBy: SIMD3<Float>, offsetBy: SIMD3<Float>) {
+        if var component = collisionComponent {
+            if let shape = component.shapes.first {
+                let calculatedBounds = shape.bounds
+                let newBoxOffset = ShapeResource.generateBox(width: calculatedBounds.extents.x * scaleBy.x,
+                                                             height: calculatedBounds.extents.y * scaleBy.y,
+                                                             depth: calculatedBounds.extents.z * scaleBy.z)
+                let newBox = newBoxOffset.offsetBy(translation: offsetBy)
+                
+                component.shapes.removeAll()
+                component.shapes.append(newBox)
+            }
+            components.set(component)
         }
     }
 }

@@ -61,31 +61,40 @@ public extension AppState {
     
     /// Manually specifies sort ordering for transparent track pieces.
     func handleTrackPieceTransparency(_ trackPiece: Entity) {
-        let group = ModelSortGroup()
-    
+
         // Find opaque fish parts and set sort order to 1.
         trackPiece.forEachDescendant(withSuffix: sortOrderFishGlassSuffix) { entity in
-            setEntityDrawOrder(entity, 1, group)
+            setEntityDrawOrder(entity, 1, trackPieceSortOrderGroup)
         }
         
-        // Find transparent fish parts and set sort order to 2
+        // Find transparent fish parts and set sort order to 2.
         trackPiece.forEachDescendant(withSuffix: sortOrderFishSuffix) { entity in
-            setEntityDrawOrder(entity, 2, group)
+            setEntityDrawOrder(entity, 2, trackPieceSortOrderGroup)
         }
         
         // Find water parts and set sort order to 3.
         trackPiece.forEachDescendant(withSuffix: sortOrderWaterSuffix) { entity in
-            setEntityDrawOrder(entity, 3, group)
+            setEntityDrawOrder(entity, 3, trackPieceSortOrderGroup)
         }
         
-        // Find the glass top piece and set sort order to 4.
+        // Find the bottom track piece and set sort order to 4.
+        trackPiece.forEachDescendant(withSuffix: sortOrderTrackBottomSuffix) { entity in
+            setEntityDrawOrder(entity, 4, trackPieceSortOrderGroup)
+        }
+        
+        // Find the glass top piece and set sort order to 5.
         trackPiece.forEachDescendant(withSuffix: sortOrderTrackTopsuffix) { entity in
-            setEntityDrawOrder(entity, 4, group)
+            setEntityDrawOrder(entity, 5, trackPieceSortOrderGroup)
         }
         
-        // Find the top glow piece and set sort order to 5.
+        // Find the bottom track piece and set sort order to 6.
+        trackPiece.forEachDescendant(withSuffix: sortOrderTrackBottomGlowSuffix) { entity in
+            setEntityDrawOrder(entity, 6, trackPieceSortOrderGroup)
+        }
+        
+        // Find the top glow piece and set sort order to 7.
         trackPiece.forEachDescendant(withSuffix: sortOrderTrackGlowSuffix) { entity in
-            setEntityDrawOrder(entity, 5, group)
+            setEntityDrawOrder(entity, 7, trackPieceSortOrderGroup)
         }
     }
     
