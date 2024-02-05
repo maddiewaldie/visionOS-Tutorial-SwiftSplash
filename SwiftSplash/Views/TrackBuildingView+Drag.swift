@@ -111,7 +111,7 @@ extension TrackBuildingView {
                 state.dragStart = nil
                 entity.connectableStateComponent = state
                 appState.findClosestPieces(for: entity)
-                SoundEffect.placePiece.play(on: entity)
+                SoundEffectPlayer.shared.play(.placePiece, from: entity)
                 if entity == appState.trackPieceBeingEdited {
                     appState.showEditAttachment()
                 }
@@ -144,8 +144,8 @@ extension TrackBuildingView {
         if state.dragStart == nil {
             state.lastMoved = NSDate.timeIntervalSinceReferenceDate
             state.dragStart = entity.scenePosition
-            SoundEffect.selectPiece.play(on: entity)
-            
+            SoundEffectPlayer.shared.play(.selectPiece, from: entity)
+
             for piece in allDragged {
                 piece.connectableStateComponent?.dragStart = piece.scenePosition
                 piece.connectableStateComponent?.dragOffset = .zero

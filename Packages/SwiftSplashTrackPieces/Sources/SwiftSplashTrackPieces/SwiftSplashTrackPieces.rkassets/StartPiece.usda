@@ -1091,8 +1091,8 @@ def Xform "Root"
 
             def RealityKitCustomComponent "SwiftSplashTrackPieces_RideWaterComponent"
             {
-                float duration = 0.5
-                float fillLevel = 0.194
+                float duration = 2.5
+                float fillLevel = 0.871
                 uniform token info:id = "SwiftSplashTrackPieces.RideWaterComponent"
             }
         }

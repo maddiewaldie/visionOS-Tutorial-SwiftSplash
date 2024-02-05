@@ -165,7 +165,7 @@ extension AppState {
         }
         updateMarkerPosition()
         updatePower()
-        SoundEffect.placePiece.play(on: piece)
+        SoundEffectPlayer.shared.play(.placePiece, from: piece)
         piece.setUpAnimationVisibility()
         return piece
     }
@@ -192,7 +192,7 @@ extension AppState {
             connect(piece: goalPiece, to: lastConnectedPiece)
             goalPiece.connectableStateComponent?.material = selectedMaterialType
             goalPiece.updateTrackPieceAppearance()
-            SoundEffect.placePiece.play(on: goalPiece)
+            SoundEffectPlayer.shared.play(.placePiece, from: goalPiece)
             updateSelection()
             updateConnections()
         }

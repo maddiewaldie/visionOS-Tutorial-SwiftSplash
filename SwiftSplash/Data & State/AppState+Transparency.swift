@@ -72,13 +72,13 @@ public extension AppState {
             setEntityDrawOrder(entity, 2, trackPieceSortOrderGroup)
         }
         
-        // Find water parts and set sort order to 3.
-        trackPiece.forEachDescendant(withSuffix: sortOrderWaterSuffix) { entity in
+        // Find the bottom track piece and set sort order to 3.
+        trackPiece.forEachDescendant(withSuffix: sortOrderTrackBottomSuffix) { entity in
             setEntityDrawOrder(entity, 3, trackPieceSortOrderGroup)
         }
         
-        // Find the bottom track piece and set sort order to 4.
-        trackPiece.forEachDescendant(withSuffix: sortOrderTrackBottomSuffix) { entity in
+        // Find water parts and set sort order to 4.
+        trackPiece.forEachDescendant(withSuffix: sortOrderWaterSuffix) { entity in
             setEntityDrawOrder(entity, 4, trackPieceSortOrderGroup)
         }
         

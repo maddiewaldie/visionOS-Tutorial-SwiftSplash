@@ -25,190 +25,141 @@ public enum MusicMode {
     }
 }
 
-/// The sound effects available for playing when you take certain actions.
-public enum SoundEffect: String, CaseIterable {
-    case placePiece = "placePiece"
-    case deletePiece = "deletePiece"
-    case selectPiece = "pickUp"
-    
-    case water = "waterFlowing"
-    case trapDoor = "startRide"
-    case fishDrop = "fishSound_longLoudHappy"
-    case fishSlide = "fishSound_mediumHappy"
-    case fishGasp = "fishSound_quietHappy"
-    case fishSucceed = "endRide"
-    
-    /// Plays a sound effect from an entity.
-    func play(on entity: Entity, offset: Duration? = nil) {
-        guard let effect = Self.soundForEffect[self] else {
-            fatalError("No sound asset for effect: \(self)")
-        }
-        
-        let audioController = entity.prepareAudio(effect)
-        audioController.gain = gain
-        
-        if !Self.isMuted {
-            if let offset = offset {
-                audioController.seek(to: offset)
+public final class SoundEffectPlayer {
+
+    public static var shared: SoundEffectPlayer = try! SoundEffectPlayer()
+
+    private static let mutedGain: Audio.Decibel = -.infinity
+    private static let unmutedGain: Audio.Decibel = .zero
+
+    private var isMuted = false
+
+    private var playbackControllers: [AudioPlaybackController] = []
+    private var soundEffects: [SoundEffect: AudioResource] = [:]
+
+    private init() throws {
+        Task {
+            // Loop the water seamlessly, starting at a random point in the file to ensure that
+            // multiple instances of the water flowing audio are decorrelated.
+            soundEffects[.waterFlowing] = try await AudioFileResource(
+                named: "waterFlowing",
+                configuration: AudioFileResource.Configuration(
+                    shouldLoop: true,
+                    shouldRandomizeStartTime: true
+                )
+            )
+
+            // Create a group of fish sounds which from which a random selection is made
+            var fishResources: [AudioFileResource] = []
+            let fileNames = ["fishSound_longLoudHappy", "fishSound_mediumHappy", "fishSound_quietHappy"]
+            for fileName in fileNames {
+                fishResources.append(try await AudioFileResource(named: fileName))
             }
-            audioController.play()
-            
-            let cancellation = {
-                audioController.stop()
-            }
-            
-            Self.loopCancellations.append((self, cancellation))
+            soundEffects[.fishSounds] = try await AudioFileGroupResource(fishResources)
+
+            soundEffects[.selectPiece] = try await AudioFileResource(named: "pickUp")
+            soundEffects[.placePiece] = try await AudioFileResource(named: "placePiece")
+            soundEffects[.deletePiece] = try await AudioFileResource(named: "deletePiece")
+            soundEffects[.startRide] = try await AudioFileResource(named: "startRide")
+            soundEffects[.endRide] = try await AudioFileResource(named: "endRide")
         }
     }
-    
+
     @discardableResult
-    func loopingPlay(on entity: Entity) -> () -> Void {
-        guard let effect = Self.soundForEffect[self] else {
-            fatalError("No sound asset for effect: \(self)")
+    public func play(_ soundEffect: SoundEffect, from entity: Entity) -> AudioPlaybackController? {
+
+        guard let audio = soundEffects[soundEffect] else {
+            logger.log("Sound effect \(soundEffect.rawValue) has not finished loading. Cannot play yet.")
+            return nil
         }
-        
-        var shouldLoop = true
-        let audioController = entity.prepareAudio(effect)
-        audioController.gain = gain
-        audioController.completionHandler = {
-            if shouldLoop {
-                audioController.play()
+
+        // Ensure that the same sound is not played repeatedly
+        if let inFlightController = playbackControllers(for: soundEffect, from: entity).first {
+            return inFlightController
+        }
+
+        let controller = entity.playAudio(audio)
+        controller.gain = isMuted ? Self.mutedGain : Self.unmutedGain
+
+        // Remove this sound from our tracking once it has stopped playing due to natural causes.
+        // This ensures that a sound which has stopped playing is not "resumed" when the game is
+        // resumed after having been paused.
+        controller.completionHandler = { [weak self, weak controller] in
+            guard let self, let controller else { return }
+            self.playbackControllers.removeAll { $0 === controller }
+        }
+
+        // Track the playback of this file so that it can be paused, resumed, muted, unmuted, and
+        // have its gain changed.
+        playbackControllers.append(controller)
+
+        return controller
+    }
+
+    public func pause(_ soundEffect: SoundEffect, from entity: Entity? = nil) {
+        for controller in playbackControllers(for: soundEffect, from: entity) {
+            controller.pause()
+        }
+    }
+
+    public func pauseAll() {
+        for controller in playbackControllers {
+            controller.pause()
+        }
+    }
+
+    public func resumeAll() {
+        for controller in playbackControllers {
+            controller.play()
+        }
+    }
+
+    public func resume(_ soundEffect: SoundEffect, from entity: Entity? = nil) {
+        for controller in playbackControllers(for: soundEffect, from: entity) {
+            controller.play()
+        }
+    }
+
+    public func stopAll() {
+        for playbackController in playbackControllers {
+            playbackController.stop()
+        }
+        playbackControllers.removeAll()
+    }
+
+    public func mute() {
+        isMuted = true
+        for playbackController in playbackControllers {
+            playbackController.fade(to: -.infinity, duration: 0.5)
+        }
+    }
+
+    public func unmute() {
+        isMuted = false
+        for playbackController in playbackControllers {
+            playbackController.fade(to: .zero, duration: 0.5)
+        }
+    }
+
+    private func playbackControllers(for soundEffect: SoundEffect, from entity: Entity? = nil) -> [AudioPlaybackController] {
+
+        guard let audio = soundEffects[soundEffect] else { return [] }
+
+        return playbackControllers
+            .filter { $0.resource === audio }
+            .filter {
+                guard let entity = entity else { return true }
+                return $0.entity == entity
             }
-        }
-        
-        if !Self.isMuted {
-            audioController.play()
-        }
-        
-        let cancellation = {
-            shouldLoop = false
-            audioController.stop()
-        }
-        
-        Self.loopCancellations.append((self, cancellation))
-        
-        return cancellation
     }
-    
-    /// Plays a random sound effect at random time intervals.
-    static func randomAmbientPlay(on entity: Entity) {
-        var shouldLoop = true
-        var audioController: AudioPlaybackController? = nil
-        
-        func recursiveCompletion() {
-            if shouldLoop {
-                randomLater {
-                    if !shouldLoop {
-                        return
-                    }
-                    
-                    let effect: Self = [.fishDrop, .fishSlide, .fishGasp].randomElement()!
-                    let newController = entity.prepareAudio(Self.soundForEffect[effect]!)
-                    newController.gain = effect.gain
-                    if !Self.isMuted {
-                        newController.play()
-                    }
-                    newController.completionHandler = recursiveCompletion
-                    audioController = newController
-                }
-            }
-        }
-        
-        recursiveCompletion()
-        
-        let cancellation = {
-            shouldLoop = false
-            audioController?.stop()
-        }
-        
-        Self.loopCancellations.append((.fishDrop, cancellation))
-    }
-    
-    var gain: Double {
-        switch self {
-        case .placePiece: 0
-        case .deletePiece: 0
-        case .selectPiece: 0
-        case .water: -10
-        case .trapDoor: 0
-        case .fishDrop: 0
-        case .fishSlide: 0
-        case .fishGasp: 0
-        case .fishSucceed: 0
-        }
-    }
-    
-    /// Calls a closure at a random time in the future.
-    private static func randomLater(_ perform: @escaping () -> Void) {
-        Timer.scheduledTimer(withTimeInterval: Double.random(in: 7...11), repeats: false) { timer in
-            perform()
-        }
-    }
-    
-    @MainActor
-    public static func enqueueEffectsForRide(_ appState: AppState, resume: Bool = false) {
-        let elapsed = (Date.timeIntervalSinceReferenceDate - appState.rideStartTime)
-        
-        if resume, elapsed < ambientSoundsDelay {
-            Self.trapDoor.play(on: appState.startPiece ?? appState.root, offset: .seconds(elapsed))
-        }
-        
-        let waterStartTime = waterStartDelay - elapsed
-        var waterTimer: Timer? = nil
-        if waterStartTime >= 0 {
-            waterTimer = Timer.scheduledTimer(withTimeInterval: waterStartTime, repeats: false) { _ in
-                Task { @MainActor in
-                    if appState.phase == .rideRunning, !appState.isVolumeMuted {
-                        SoundEffect.water.loopingPlay(on: appState.startPiece ?? appState.root)
-                    }
-                }
-            }
-        }
-        
-        let ambientStartTime = ambientSoundsDelay - elapsed
-        var ambientTimer: Timer? = nil
-        
-        if ambientStartTime >= 0 {
-            ambientTimer = Timer.scheduledTimer(withTimeInterval: ambientStartTime, repeats: false) { _ in
-                Task { @MainActor in
-                    if appState.phase == .rideRunning && !appState.isVolumeMuted {
-                        SoundEffect.randomAmbientPlay(on: appState.startPiece ?? appState.root)
-                    }
-                }
-            }
-        }
-        
-        // Potentially cancel these early if the ride is paused or reset.
-        loopCancellations.append((.water, {
-            waterTimer?.invalidate()
-        }))
-        
-        loopCancellations.append((nil, {
-            ambientTimer?.invalidate()
-        }))
-    }
-    
-    /// A mapping of sound effect types to their associated audio resource.
-    ///
-    /// This map is populated during the asset loading phase when the app starts.
-    public static var soundForEffect: [SoundEffect: AudioFileResource] = [:]
-    public static var loopCancellations: [(effect: SoundEffect?, closure: () -> Void)] = []
-    public static var isMuted = false
-    
-    public static func stopLoops() {
-        loopCancellations.forEach { $0.closure() }
-        loopCancellations = []
-    }
-    
-    public static func stopLoops(for effect: Self?) {
-        loopCancellations.forEach {
-            if let effect = effect, $0.effect == effect {
-                $0.closure()
-            }
-            
-            if effect == nil, $0.effect == nil {
-                $0.closure()
-            }
-        }
-    }
+}
+
+public enum SoundEffect: String {
+    case waterFlowing
+    case fishSounds
+    case startRide
+    case endRide
+    case selectPiece
+    case placePiece
+    case deletePiece
 }

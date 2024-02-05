@@ -14,7 +14,7 @@ struct RideControlView: View {
     @State private var animateIn = true
     @State private var canStartRide = false
     @State private var paused = true
-    
+
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -47,7 +47,6 @@ struct RideControlView: View {
                 Task {
                     // Pause a moment to let the previous ride cancel.
                     try await Task.sleep(for: .seconds(0.1))
-                    //SoundEffect.stopLoops()
                     appState.resetRideAnimations()
                     appState.goalPiece?.stopWaterfall()
                     appState.startRide()
@@ -58,7 +57,6 @@ struct RideControlView: View {
                 Label("Restart Ride", systemImage: "arrow.counterclockwise")
                     .labelStyle(.iconOnly)
             }
-            .buttonStyle(.borderless)
             .padding(.trailing, 9)
             .accessibilityElement()
             .accessibilityValue(Text("Start the ride over from the beginning."))
@@ -82,13 +80,13 @@ struct RideControlView: View {
             
             if !shouldPauseRide {
                 appState.rideStartTime += Date.timeIntervalSinceReferenceDate - pauseStartTime
-                SoundEffect.enqueueEffectsForRide(appState, resume: true)
                 appState.startPiece?.setRideLights(to: true, speed: 1.0)
                 appState.goalPiece?.setRideLights(to: true, speed: 1.0)
+                SoundEffectPlayer.shared.resumeAll()
             } else {
-                SoundEffect.stopLoops()
                 appState.startPiece?.setRideLights(to: true, speed: 0.0)
                 appState.goalPiece?.setRideLights(to: true, speed: 0.0)
+                SoundEffectPlayer.shared.pauseAll()
             }
             
             appState.music = shouldPauseRide ? .silent : .ride
@@ -102,4 +100,3 @@ struct RideControlView: View {
     appState.goalPiece = Entity()
     return RideControlView().environment(appState)
 }
-

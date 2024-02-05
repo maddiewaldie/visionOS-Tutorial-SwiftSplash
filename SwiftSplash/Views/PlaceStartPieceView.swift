@@ -25,7 +25,7 @@ struct PlaceStartPieceView: View {
             .frame(maxWidth: 405, maxHeight: 100, alignment: .center)
             .glassBackgroundEffect()
             .onTapGesture {
-                SoundEffect.fishGasp.play(on: appState.startPiece ?? appState.root)
+                SoundEffectPlayer.shared.play(.fishSounds, from: appState.startPiece ?? appState.root)
             }
     }
 }

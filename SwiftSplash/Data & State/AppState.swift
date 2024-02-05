@@ -39,27 +39,29 @@ let logger = Logger(subsystem: "com.apple-samplecode.SwiftSplash", category: "ge
 @MainActor
 public class AppState {
     
-     var phase: AppPhase = .startingUp
+    var phase: AppPhase = .startingUp
         
     /// The app's AR session.
-     var session: ARKitSession = ARKitSession()
+    var session: ARKitSession = ARKitSession()
     
     /// The app uses this to retrieve the location and orientation of the device.
-     var worldInfo = WorldTrackingProvider()
+    var worldInfo = WorldTrackingProvider()
     
-     var meshEntities = [UUID: ModelEntity]()
-     var startAttachment: ViewAttachmentEntity?
-     var editAttachment: ViewAttachmentEntity?
-     var isImmersiveViewShown = false
-    
+    var meshEntities = [UUID: ModelEntity]()
+    var startAttachment: ViewAttachmentEntity?
+    var editAttachment: ViewAttachmentEntity?
+    var isImmersiveViewShown = false
+
+    var startRideAudioController: AudioPlaybackController?
+
     /// A Boolean that indicates whether the ride is currently running.
-     var isRideRunning = false
+    var isRideRunning = false
     
     /// The time the current ride run started or 0 if the ride isn't running.
     var rideStartTime: TimeInterval = 0
     
     var rideDuration: TimeInterval = 0.0
-    
+
     public var lastConnectedPiece: Entity? {
         var lastPiece: Entity? = nil
         var iteratePiece: Entity? = startPiece
@@ -93,11 +95,11 @@ public class AppState {
 
     var isVolumeMuted = false {
         didSet {
-            SoundEffect.isMuted = isVolumeMuted
             if isVolumeMuted {
+                SoundEffectPlayer.shared.mute()
                 [buildMusic, menuMusic, rideMusic].forEach { $0.volume = 0 }
-                SoundEffect.stopLoops()
             } else {
+                SoundEffectPlayer.shared.unmute()
                 [buildMusic, menuMusic, rideMusic].filter { $0.isPlaying }.forEach {
                     $0.volume = 1.0
                 }
@@ -164,7 +166,7 @@ public class AppState {
     var additionalSelectedTrackPieces = [Entity]()
     
     /// An array of all the pieces available to place in a scene excluding the start and end pieces.
-     public var pieces = [
+    public var pieces = [
         Piece(name: "Straight", key: .slide1, sceneName: "Slide01.usda"),
         Piece(name: "Slide", key: .slide2, sceneName: "Slide02.usda"),
         Piece(name: "Right Turn", key: .slide3, sceneName: "Slide03.usda"),
@@ -190,14 +192,6 @@ public class AppState {
                     entity.components[ParticleEmitterComponent.self] = component
                     entity.components.set(component)
                 }
-            }
-        }
-        
-        // Load sounds.
-        Task {
-            for effect in SoundEffect.allCases {
-                let resource = try await AudioFileResource(named: "\(effect.rawValue).wav")
-                SoundEffect.soundForEffect[effect] = resource
             }
         }
     }

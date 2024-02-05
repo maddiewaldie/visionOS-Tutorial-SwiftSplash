@@ -61,6 +61,7 @@ extension AppState {
     
     /// Starts the ride running from the start piece to the goal.
     public func startRide() {
+        SoundEffectPlayer.shared.stopAll()
         clearSelection()
         shouldCancelRide = false
         isRideRunning = true
@@ -84,7 +85,7 @@ extension AppState {
                             for animation in entity.availableAnimations {
                                 let animation = animation.repeat(count: Int.max)
                                 let controller = entity.playAnimation(animation, transitionDuration: 0.0, startsPaused: false)
-                                rideAnimationcontrollers.append(controller)
+                                rideAnimationControllers.append(controller)
                                 controller.resume()
                                 controller.speed = Float(animationSpeedMultiplier)
                             }
@@ -95,11 +96,12 @@ extension AppState {
             }
         }
 
-        SoundEffect.trapDoor.play(on: startPiece ?? root)
         music = .ride
-        
-        SoundEffect.enqueueEffectsForRide(self)
-        
+
+        if let startPiece {
+            SoundEffectPlayer.shared.play(.startRide, from: startPiece)
+        }
+
         if let startPiece = startPiece {
             startRideLights()
             startWaterFilling()
@@ -120,11 +122,13 @@ extension AppState {
             if trackPieceBeingEdited != nil {
                 showEditAttachment()
             }
+            SoundEffectPlayer.shared.stopAll()
         }
     }
     
     /// Call this to go back to building or editing the track after calling `finishBuildingTrack()` or `startRide()`.
     func returnToBuildingTrack() {
+        SoundEffectPlayer.shared.stopAll()
         phase.transition(to: .buildingTrack)
     }
 }

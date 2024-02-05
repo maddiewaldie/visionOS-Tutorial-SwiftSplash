@@ -32,16 +32,16 @@ extension AppState {
         // Remove the part of the animation after the goal post.
         rideDuration = duration / animationSpeedMultiplier + 1.0
     }
-    
+
     /// Call this when returning to build mode to reset the animations and hide the moving fish and water.
     public func resetRideAnimations() {
         guard let startPiece = startPiece else { fatalError("No start piece found.") }
         
-        for controller in rideAnimationcontrollers {
+        for controller in rideAnimationControllers {
             controller.pause()
             controller.time = 0
         }
-        rideAnimationcontrollers.removeAll()
+        rideAnimationControllers.removeAll()
         
         var currentPiece: Entity? = goalPiece
         Task {

@@ -20,7 +20,7 @@ extension AppState {
         }
         
         Task {
-            SoundEffect.deletePiece.play(on: startPiece ?? root)
+            SoundEffectPlayer.shared.play(.deletePiece, from: startPiece ?? root)
             if entity == startPiece {
                 entity.connectableStateComponent?.isSelected = false
             } else if entity == goalPiece {

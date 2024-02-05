@@ -62,7 +62,7 @@ struct TrackBuildingView: View {
                 PlaceStartPieceView()
             }
         }
-        .gesture(DragGesture(minimumDistance: 10)
+        .gesture(DragGesture(minimumDistance: 50)
             .targetedToAnyEntity()
             .onChanged { value in
                 guard appState.phase == .buildingTrack || appState.phase == .placingStartPiece
@@ -75,7 +75,7 @@ struct TrackBuildingView: View {
                 handleDrag(value, ended: true)
             })
         .simultaneousGesture(
-            RotateGesture()
+            RotateGesture(minimumAngleDelta: Angle(degrees: 4))
                 .targetedToAnyEntity()
                 .onChanged({ value in
                     guard appState.phase == .buildingTrack || appState.phase == .placingStartPiece
@@ -133,9 +133,9 @@ struct TrackBuildingView: View {
                                 logger.info("Tap on placement marker. This piece doesn't support edit mode.")
                                 return
                             }
-                            
-                            SoundEffect.selectPiece.play(on: entity)
-                            
+
+                            SoundEffectPlayer.shared.play(.selectPiece, from: entity)
+
                             if appState.trackPieceBeingEdited == entity {
                                 appState.trackPieceBeingEdited = nil
                                 appState.clearSelection()

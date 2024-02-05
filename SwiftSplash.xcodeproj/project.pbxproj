@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073B488B2AE6F8760080153E /* waterFlowing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 073B488A2AE6F8760080153E /* waterFlowing.wav */; };
 		1F13D56E2984620500EC78A8 /* SwiftSplashTrackPieces in Frameworks */ = {isa = PBXBuildFile; productRef = 1F13D56D2984620500EC78A8 /* SwiftSplashTrackPieces */; };
 		1F2FE882291DA7CD008D6795 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2FE881291DA7CD008D6795 /* AppState.swift */; };
 		1F30FEED2AA12644006352A2 /* AppState+PieceLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30FEEC2AA12644006352A2 /* AppState+PieceLoading.swift */; };
@@ -42,7 +43,6 @@
 		32AF050A2A8BE0C70080BDCD /* swiftSplash_Menu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF04FD2A8BE0C60080BDCD /* swiftSplash_Menu.wav */; };
 		32AF050B2A8BE0C70080BDCD /* fishSound_mediumHappy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF04FE2A8BE0C60080BDCD /* fishSound_mediumHappy.wav */; };
 		32AF050C2A8BE0C70080BDCD /* fishSound_quietHappy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF04FF2A8BE0C60080BDCD /* fishSound_quietHappy.wav */; };
-		32AF050D2A8BE0C70080BDCD /* waterFlowing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF05002A8BE0C60080BDCD /* waterFlowing.wav */; };
 		32AF050E2A8BE0C70080BDCD /* pickUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF05012A8BE0C60080BDCD /* pickUp.wav */; };
 		32AF050F2A8BE0C70080BDCD /* swiftSplash_BuildMode.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF05022A8BE0C70080BDCD /* swiftSplash_BuildMode.wav */; };
 		32AF05122A8BE0C70080BDCD /* placePiece.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32AF05052A8BE0C70080BDCD /* placePiece.wav */; };
@@ -53,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		069DF3ADB744789956636AF1 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		073B488A2AE6F8760080153E /* waterFlowing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = waterFlowing.wav; sourceTree = "<group>"; };
 		1F2FE881291DA7CD008D6795 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1F30FEEC2AA12644006352A2 /* AppState+PieceLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+PieceLoading.swift"; sourceTree = "<group>"; };
 		1F30FF682AA140E6006352A2 /* PieceShelfTrackButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceShelfTrackButtonsView.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		32AF04FD2A8BE0C60080BDCD /* swiftSplash_Menu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swiftSplash_Menu.wav; sourceTree = "<group>"; };
 		32AF04FE2A8BE0C60080BDCD /* fishSound_mediumHappy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fishSound_mediumHappy.wav; sourceTree = "<group>"; };
 		32AF04FF2A8BE0C60080BDCD /* fishSound_quietHappy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fishSound_quietHappy.wav; sourceTree = "<group>"; };
-		32AF05002A8BE0C60080BDCD /* waterFlowing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = waterFlowing.wav; sourceTree = "<group>"; };
 		32AF05012A8BE0C60080BDCD /* pickUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickUp.wav; sourceTree = "<group>"; };
 		32AF05022A8BE0C70080BDCD /* swiftSplash_BuildMode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swiftSplash_BuildMode.wav; sourceTree = "<group>"; };
 		32AF05052A8BE0C70080BDCD /* placePiece.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = placePiece.wav; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				2D505F93475BBFCEC47570B3 /* LICENSE.txt */,
 			);
 			name = LICENSE;
-			path = LICENSE;
+			path = .;
 			sourceTree = "<group>";
 		};
 		1F2331EE2925425A00D5EAFC /* Views */ = {
@@ -240,7 +240,7 @@
 				32AF05022A8BE0C70080BDCD /* swiftSplash_BuildMode.wav */,
 				32AF04FD2A8BE0C60080BDCD /* swiftSplash_Menu.wav */,
 				32AF04F92A8BE0C50080BDCD /* swiftSplash_RideMode.m4a */,
-				32AF05002A8BE0C60080BDCD /* waterFlowing.wav */,
+				073B488A2AE6F8760080153E /* waterFlowing.wav */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -317,6 +317,7 @@
 			files = (
 				32AF05062A8BE0C70080BDCD /* swiftSplash_RideMode.m4a in Resources */,
 				1F6BF6242919C4D9006F6A58 /* Preview Assets.xcassets in Resources */,
+				073B488B2AE6F8760080153E /* waterFlowing.wav in Resources */,
 				32AF050F2A8BE0C70080BDCD /* swiftSplash_BuildMode.wav in Resources */,
 				32AFFAD62AB0FC6E0093488C /* endRide.wav in Resources */,
 				32AF050E2A8BE0C70080BDCD /* pickUp.wav in Resources */,
@@ -328,7 +329,6 @@
 				32AF05072A8BE0C70080BDCD /* fishSound_longLoudHappy.wav in Resources */,
 				32AFFAD42AB0FC5C0093488C /* startRide.wav in Resources */,
 				1F6BF6212919C4D9006F6A58 /* Assets.xcassets in Resources */,
-				32AF050D2A8BE0C70080BDCD /* waterFlowing.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,7 +40,7 @@ var shouldPauseRide = false
 var pauseStartTime: TimeInterval = 0
 
 /// Use to keep a reference to ride animations.
-var rideAnimationcontrollers = [AnimationPlaybackController]()
+var rideAnimationControllers = [AnimationPlaybackController]()
 
 /// Indicate how long it takes to snap rotation to the nearest 90°. The maximum snap rotation
 /// is 45°, so this value represents how long it takes to snap rotate 45°.

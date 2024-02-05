@@ -170,7 +170,16 @@ extension AppState {
             try? await Task.sleep(for: .seconds(waterStartDelay))
             
             guard let startPiece = self.startPiece else { fatalError("Start piece is missing.") }
-            
+
+            if !shouldCancelRide {
+                // Play the water flowing sound from gate when it opens up
+                SoundEffectPlayer.shared.play(.waterFlowing, from: startPiece)
+            }
+
+            if shouldPauseRide {
+                SoundEffectPlayer.shared.pause(.waterFlowing)
+            }
+
             var currentPiece: Entity? = startPiece
             var pieceStartTime: TimeInterval = Date.timeIntervalSinceReferenceDate
             while currentPiece != nil {
@@ -199,8 +208,15 @@ extension AppState {
                     
                     currentPiece = currentPiece?.connectableStateComponent?.nextPiece
                 }
+
             }
+
             if shouldCancelRide { return }
+
+            if let goalPiece {
+                SoundEffectPlayer.shared.play(.waterFlowing, from: goalPiece)
+            }
+
             goalPiece?.setAllParticleEmittersTo(to: true, except: [fireworksParticlesName, fishSplashParticleName])
         }
     }

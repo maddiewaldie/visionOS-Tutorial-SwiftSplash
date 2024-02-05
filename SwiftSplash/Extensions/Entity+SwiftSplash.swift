@@ -66,7 +66,18 @@ public extension Entity {
             }
             modelEntity.modelComponent = modelComponent
         }
-        
+
+        if let connectableStateComponent {
+            // Plastic and Wood ride pieces are open on the top, while Metal ride pieces have a
+            // glass enclosure. For Plastic and Wood ride pieces, emit water flowing sounds from
+            // each piece, with the volume equivalent to the level of water.
+            if [.plastic, .wood].contains(connectableStateComponent.material) {
+                if let controller = SoundEffectPlayer.shared.play(.waterFlowing, from: self) {
+                    controller.gain = decibels(amplitude: Double(level))
+                }
+            }
+        }
+
         forEachDescendant(withComponent: RideWaterComponent.self) { entity, component in
             if let modelComponent = entity.modelComponent {
                 setWaterlevelOnMaterials(entity, modelComponent, level)
@@ -108,16 +119,19 @@ public extension Entity {
                 }
                 
                 let controller = entity.playAnimation(animation, transitionDuration: 0.0, startsPaused: false)
-                rideAnimationcontrollers.append(controller)
+                rideAnimationControllers.append(controller)
                 controller.resume()
                 controller.speed = Float(animationSpeedMultiplier)
             }
         }
+
+        // Conditionally play a random fish sound from the ride piece
+        maybePlayAFishSound()
+
         Task(priority: .high) {
             await loopThroughRidePieces(animDuration: animDuration)
         }
     }
-    
     private func loopThroughRidePieces(animDuration: Double) async {
         var rideStartTime: TimeInterval = Date.timeIntervalSinceReferenceDate
         var adjustedStartTime = rideStartTime
@@ -133,7 +147,7 @@ public extension Entity {
                 handleRidePause(adjustedStartTime: &adjustedStartTime, rideStartTime: &rideStartTime)
             } else {
                 if rideStartTime > 0 {
-                    for controller in rideAnimationcontrollers {
+                    for controller in rideAnimationControllers {
                         controller.resume()
                     }
                     pauseStartTime = 0
@@ -144,7 +158,6 @@ public extension Entity {
 
         if shouldCancelRide { return }
         if let nextPiece = self.connectableStateComponent?.nextPiece, nextPiece.name == "end" {
-            handleNextEndPiece()
             handleEndPiece()
 
         }
@@ -157,18 +170,20 @@ public extension Entity {
             return
         }
         if shouldCancelRide { return }
+
         // See if there's another piece connected after this one.
         logger.info("Triggering animation from \(self.name) on \(nextPiece.name) at \(Date.timestamp)")
         nextPiece.playRideAnimations()
     }
     
     private func handleEndPiece() {
-        // Stop playing idle sounds.
-        SoundEffect.stopLoops(for: nil)
-        
+
         guard let endPiece = self.connectableStateComponent?.nextPiece else { fatalError("Next piece is not the end piece.") }
-        
+
         endPiece.setAllParticleEmittersTo(to: true, except: [waterFallParticlesName, fishSplashParticleName])
+
+        SoundEffectPlayer.shared.play(.endRide, from: endPiece)
+
         Task {
             try await Task.sleep(for: .seconds(1))
             endPiece.makeFishSplash()
@@ -178,19 +193,17 @@ public extension Entity {
     }
     
     private func handleRidePause(adjustedStartTime: inout TimeInterval, rideStartTime: inout TimeInterval ) {
+
         if pauseStartTime == 0 {
             pauseStartTime = Date.timeIntervalSinceReferenceDate
         }
-        for controller in rideAnimationcontrollers {
+        for controller in rideAnimationControllers {
             controller.pause()
         }
+
+        SoundEffectPlayer.shared.pause(.startRide)
+
         adjustedStartTime = rideStartTime + Date.timeIntervalSinceReferenceDate - pauseStartTime
-    }
-    
-    private func handleNextEndPiece() {
-        SoundEffect.stopLoops(for: nil)
-        SoundEffect.stopLoops(for: .fishDrop)
-        SoundEffect.fishSucceed.play(on: self)
     }
  
     /// Sets all particle systems contained in this entity's hierarchy on or off.
@@ -278,4 +291,20 @@ public extension Entity {
             components.set(component)
         }
     }
+
+    private func maybePlayAFishSound() {
+
+        // Don't play fish sounds from the start or goal pieces as the associated files already
+        // have fish sounds in them.
+        guard !["start", "end"].contains(name) else { return }
+
+        // Only play a fish sound roughly one out of four ride pieces.
+        if Int.random(in: 0..<4) == 0 {
+            // Play a random fish sound from the audio file group resource
+            SoundEffectPlayer.shared.play(.fishSounds, from: self)
+        }
+    }
 }
+
+/// - Returns: The Decibels in [-inf,0] for the given amplitude in [0,1].
+func decibels(amplitude: Double) -> Audio.Decibel { 20 * log10(amplitude) }

@@ -160,7 +160,6 @@ struct ContentView: View {
                             appState.returnToBuildingTrack()
                             appState.isRideRunning = false
                             appState.music = .build
-                            SoundEffect.stopLoops()
                             appState.updateConnections()
                             appState.updateSelection()
                             appState.goalPiece?.setAllParticleEmittersTo(to: false)
